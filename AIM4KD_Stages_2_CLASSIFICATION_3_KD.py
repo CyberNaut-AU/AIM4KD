@@ -521,7 +521,7 @@ def main():
     SySFor_KD()
     Reset_Rules_Array()
 
-    # After Classification Comabine All Classification Output into a KD Rule Bank
+    # After Classification Combine All Classification Output into a KD Rule Bank
     Output_KD_Rule_Bank(output_dir)
 
 if __name__ == "__main__":
