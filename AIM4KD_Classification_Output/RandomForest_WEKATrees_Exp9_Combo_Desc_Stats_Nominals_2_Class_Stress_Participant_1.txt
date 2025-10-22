@@ -1,0 +1,1997 @@
+
+Options: -print -I 10 -M 2.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 2.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 62.5
+|   |   GSR_SD < 4 : Stress (11/0)
+|   |   GSR_SD >= 4
+|   |   |   HR_Mean < 60 : Stress (4/0)
+|   |   |   HR_Mean >= 60 : NoStress (1/0)
+|   HR_Med >= 62.5 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal
+|   RESP_Mean < 17.5 : NoStress (13/0)
+|   RESP_Mean >= 17.5 : Stress (4/0)
+
+Size of the tree : 12
+
+
+RandomTree
+==========
+
+RESP_Med < 17
+|   TEMP_Max < 1.5 : NoStress (3/1)
+|   TEMP_Max >= 1.5 : NoStress (9/0)
+RESP_Med >= 17
+|   GSR_Mean < 26
+|   |   RESP_Mean < 17.5 : NoStress (3/0)
+|   |   RESP_Mean >= 17.5
+|   |   |   HR_SD < 4.5 : Stress (20/0)
+|   |   |   HR_SD >= 4.5 : NoStress (2/0)
+|   GSR_Mean >= 26 : NoStress (3/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below
+|   GSR_Max < 16.5 : Stress (4/0)
+|   GSR_Max >= 16.5 : NoStress (6/0)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal
+|   RESP_SD < 1.5
+|   |   TEMP_Mod < 0.5
+|   |   |   RESP_Med < 16.5 : NoStress (1/0)
+|   |   |   RESP_Med >= 16.5 : Stress (5/0)
+|   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   RESP_SD >= 1.5
+|   |   RESP_Min_GlobalRef = Below : NoStress (8/0)
+|   |   RESP_Min_GlobalRef = Above : Stress (2/0)
+|   |   RESP_Min_GlobalRef = Equal
+|   |   |   RESP_Mod < 17 : NoStress (3/0)
+|   |   |   RESP_Mod >= 17 : Stress (1/0)
+
+Size of the tree : 17
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 63
+|   |   RESP_Max < 18.5
+|   |   |   GSR_Mean < 17.5 : NoStress (1/0)
+|   |   |   GSR_Mean >= 17.5 : Stress (3/0)
+|   |   RESP_Max >= 18.5 : Stress (18/0)
+|   HR_Med >= 63 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal
+|   GSR_Mean < 23.5
+|   |   RESP_Mean < 17.5 : NoStress (3/1)
+|   |   RESP_Mean >= 17.5 : Stress (5/0)
+|   GSR_Mean >= 23.5 : NoStress (5/0)
+
+Size of the tree : 14
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5
+|   TEMP_Min_GlobalRef = Below : NoStress (1/0)
+|   TEMP_Min_GlobalRef = Above : Stress (2/0)
+|   TEMP_Min_GlobalRef = Equal
+|   |   HR_Max < 84.5 : NoStress (13/0)
+|   |   HR_Max >= 84.5 : Stress (1/0)
+RESP_Mean >= 17.5
+|   GSR_Max < 40
+|   |   TEMP_Max_GlobalRef = Below : Stress (2/1)
+|   |   TEMP_Max_GlobalRef = Above : Stress (0/0)
+|   |   TEMP_Max_GlobalRef = Equal : Stress (17/0)
+|   GSR_Max >= 40 : NoStress (4/0)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Max < 1.5 : NoStress (5/0)
+|   TEMP_Max >= 1.5
+|   |   RESP_Mean < 17.5 : NoStress (14/0)
+|   |   RESP_Mean >= 17.5
+|   |   |   GSR_Max < 47.5 : Stress (7/0)
+|   |   |   GSR_Max >= 47.5 : NoStress (1/0)
+TEMP_Min >= -1.5
+|   HR_Max < 68.5 : Stress (10/0)
+|   HR_Max >= 68.5 : NoStress (3/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below
+|   HR_Med < 61 : Stress (2/1)
+|   HR_Med >= 61 : NoStress (3/0)
+RESP_Mean_GlobalRef = Above
+|   TEMP_Mod < 0.5 : Stress (13/0)
+|   TEMP_Mod >= 0.5
+|   |   GSR_Mod < 1 : Stress (2/0)
+|   |   GSR_Mod >= 1 : NoStress (7/0)
+RESP_Mean_GlobalRef = Equal
+|   HR_Mod < 54 : Stress (2/0)
+|   HR_Mod >= 54
+|   |   GSR_Med < 16 : NoStress (10/0)
+|   |   GSR_Med >= 16 : Stress (1/0)
+
+Size of the tree : 14
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below
+|   GSR_Min < 7 : NoStress (7/0)
+|   GSR_Min >= 7 : Stress (4/0)
+RESP_Mean_GlobalRef = Above
+|   HR_Mean_GlobalRef = Below
+|   |   HRV_SDNN < 82.5 : Stress (12/0)
+|   |   HRV_SDNN >= 82.5 : NoStress (1/0)
+|   HR_Mean_GlobalRef = Above : NoStress (4/0)
+|   HR_Mean_GlobalRef = Equal : Stress (5/0)
+RESP_Mean_GlobalRef = Equal
+|   GSR_Max < 24.5 : NoStress (6/0)
+|   GSR_Max >= 24.5 : Stress (1/0)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below
+|   |   |   HR_Mean < 59.5 : Stress (2/0)
+|   |   |   HR_Mean >= 59.5 : NoStress (6/0)
+|   |   RESP_Min_GlobalRef = Above
+|   |   |   GSR_Min < 4.5 : Stress (8/0)
+|   |   |   GSR_Min >= 4.5
+|   |   |   |   RESP_Mod < 18 : NoStress (4/0)
+|   |   |   |   RESP_Mod >= 18 : Stress (1/0)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 14
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below
+|   |   RESP_SD_GlobalRef = Below : Stress (4/0)
+|   |   RESP_SD_GlobalRef = Above : Stress (0/0)
+|   |   RESP_SD_GlobalRef = Equal
+|   |   |   GSR_SD < 3.5 : Stress (3/0)
+|   |   |   GSR_SD >= 3.5 : NoStress (4/0)
+|   RESP_Min_GlobalRef = Above
+|   |   GSR_Max < 43.5 : Stress (18/0)
+|   |   GSR_Max >= 43.5 : NoStress (2/0)
+|   RESP_Min_GlobalRef = Equal
+|   |   HR_Med < 61 : NoStress (3/0)
+|   |   HR_Med >= 61 : Stress (1/0)
+
+Size of the tree : 15
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          40              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.1258
+Root mean squared error                  0.1801
+Relative absolute error                 25.1667 %
+Root relative squared error             36.017  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Stress
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     NoStress
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+  0 20 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          28               70      %
+Incorrectly Classified Instances        12               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3595
+Root mean squared error                  0.4522
+Relative absolute error                 71.8995 %
+Root relative squared error             90.4491 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.250    0.722      0.650    0.684      0.402    0.750     0.795     Stress
+                 0.750    0.350    0.682      0.750    0.714      0.402    0.749     0.691     NoStress
+Weighted Avg.    0.700    0.300    0.702      0.700    0.699      0.402    0.749     0.743     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 4.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 4.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 62.5
+|   |   GSR_SD < 4 : Stress (11/0)
+|   |   GSR_SD >= 4 : Stress (5/1)
+|   HR_Med >= 62.5 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal
+|   HRV_rMSSD < 66.5 : NoStress (9/0)
+|   HRV_rMSSD >= 66.5
+|   |   RESP_Mean < 17.5 : NoStress (4/0)
+|   |   RESP_Mean >= 17.5 : Stress (4/0)
+
+Size of the tree : 12
+
+
+RandomTree
+==========
+
+RESP_Med < 17
+|   TEMP_Max < 1.5 : NoStress (3/1)
+|   TEMP_Max >= 1.5 : NoStress (9/0)
+RESP_Med >= 17
+|   GSR_Mean < 26
+|   |   RESP_Mean < 17.5 : NoStress (3/0)
+|   |   RESP_Mean >= 17.5
+|   |   |   HR_SD < 4.5 : Stress (20/0)
+|   |   |   HR_SD >= 4.5 : NoStress (2/0)
+|   GSR_Mean >= 26 : NoStress (3/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below
+|   GSR_Max < 16.5 : Stress (4/0)
+|   GSR_Max >= 16.5 : NoStress (6/0)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal
+|   RESP_SD < 1.5
+|   |   TEMP_Mod < 0.5 : Stress (6/1)
+|   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   RESP_SD >= 1.5
+|   |   RESP_Med < 18.5
+|   |   |   HRV_SDNN < 76.5 : NoStress (11/0)
+|   |   |   HRV_SDNN >= 76.5 : Stress (1/0)
+|   |   RESP_Med >= 18.5 : Stress (2/0)
+
+Size of the tree : 14
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 63
+|   |   RESP_Max < 18.5 : Stress (4/1)
+|   |   RESP_Max >= 18.5 : Stress (18/0)
+|   HR_Med >= 63 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal
+|   RESP_Mean_GlobalRef = Below : NoStress (5/0)
+|   RESP_Mean_GlobalRef = Above : Stress (5/0)
+|   RESP_Mean_GlobalRef = Equal : NoStress (3/1)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5
+|   TEMP_Min_GlobalRef = Below : NoStress (1/0)
+|   TEMP_Min_GlobalRef = Above : Stress (2/0)
+|   TEMP_Min_GlobalRef = Equal
+|   |   HR_Max < 84.5 : NoStress (13/0)
+|   |   HR_Max >= 84.5 : Stress (1/0)
+RESP_Mean >= 17.5
+|   GSR_Max < 40
+|   |   TEMP_Max_GlobalRef = Below : Stress (2/1)
+|   |   TEMP_Max_GlobalRef = Above : Stress (0/0)
+|   |   TEMP_Max_GlobalRef = Equal : Stress (17/0)
+|   GSR_Max >= 40 : NoStress (4/0)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Max < 1.5 : NoStress (5/0)
+|   TEMP_Max >= 1.5
+|   |   RESP_Mean < 17.5 : NoStress (14/0)
+|   |   RESP_Mean >= 17.5
+|   |   |   GSR_Max < 47.5 : Stress (7/0)
+|   |   |   GSR_Max >= 47.5 : NoStress (1/0)
+TEMP_Min >= -1.5
+|   HR_Max < 68.5 : Stress (10/0)
+|   HR_Max >= 68.5 : NoStress (3/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above
+|   HR_Max_GlobalRef = Below
+|   |   GSR_Med < 25 : Stress (15/0)
+|   |   GSR_Med >= 25 : NoStress (2/0)
+|   HR_Max_GlobalRef = Above : NoStress (5/0)
+|   HR_Max_GlobalRef = Equal : Stress (0/0)
+RESP_Mean_GlobalRef = Equal
+|   HR_Mod < 54 : Stress (2/0)
+|   HR_Mod >= 54
+|   |   RESP_SD < 1.5 : Stress (2/1)
+|   |   RESP_SD >= 1.5 : NoStress (9/0)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below
+|   GSR_Min < 7 : NoStress (7/0)
+|   GSR_Min >= 7 : Stress (4/0)
+RESP_Mean_GlobalRef = Above
+|   HR_Mean_GlobalRef = Below
+|   |   HRV_SDNN < 82.5 : Stress (12/0)
+|   |   HRV_SDNN >= 82.5 : NoStress (1/0)
+|   HR_Mean_GlobalRef = Above : NoStress (4/0)
+|   HR_Mean_GlobalRef = Equal : Stress (5/0)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below
+|   |   |   HR_Mean < 59.5 : Stress (2/0)
+|   |   |   HR_Mean >= 59.5 : NoStress (6/0)
+|   |   RESP_Min_GlobalRef = Above
+|   |   |   GSR_Min < 4.5 : Stress (8/0)
+|   |   |   GSR_Min >= 4.5 : NoStress (5/1)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 12
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below
+|   |   RESP_SD_GlobalRef = Below : Stress (4/0)
+|   |   RESP_SD_GlobalRef = Above : Stress (0/0)
+|   |   RESP_SD_GlobalRef = Equal : NoStress (7/3)
+|   RESP_Min_GlobalRef = Above
+|   |   GSR_SD < 9 : Stress (18/0)
+|   |   GSR_SD >= 9 : NoStress (2/0)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 11
+
+
+
+Time taken to build model: 0.24 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          37               92.5    %
+Incorrectly Classified Instances         3                7.5    %
+Kappa statistic                          0.85  
+Mean absolute error                      0.1514
+Root mean squared error                  0.2122
+Relative absolute error                 30.2845 %
+Root relative squared error             42.4362 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.050    0.947      0.900    0.923      0.851    0.995     0.995     Stress
+                 0.950    0.100    0.905      0.950    0.927      0.851    0.995     0.995     NoStress
+Weighted Avg.    0.925    0.075    0.926      0.925    0.925      0.851    0.995     0.995     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+  1 19 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.3686
+Root mean squared error                  0.4517
+Relative absolute error                 73.7245 %
+Root relative squared error             90.3411 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.300    0.684      0.650    0.667      0.350    0.741     0.774     Stress
+                 0.700    0.350    0.667      0.700    0.683      0.350    0.741     0.695     NoStress
+Weighted Avg.    0.675    0.325    0.675      0.675    0.675      0.350    0.741     0.735     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 6.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 6.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 62.5
+|   |   GSR_SD < 4 : Stress (11/0)
+|   |   GSR_SD >= 4 : Stress (5/1)
+|   HR_Med >= 62.5 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal
+|   HRV_rMSSD < 66.5 : NoStress (9/0)
+|   HRV_rMSSD >= 66.5 : Stress (8/4)
+
+Size of the tree : 10
+
+
+RandomTree
+==========
+
+RESP_Med < 17
+|   TEMP_Max < 1.5 : NoStress (3/1)
+|   TEMP_Max >= 1.5 : NoStress (9/0)
+RESP_Med >= 17
+|   GSR_Mean < 26
+|   |   RESP_Mean < 17.5 : NoStress (3/0)
+|   |   RESP_Mean >= 17.5
+|   |   |   HR_SD < 4.5 : Stress (20/0)
+|   |   |   HR_SD >= 4.5 : NoStress (2/0)
+|   GSR_Mean >= 26 : NoStress (3/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal
+|   RESP_Min_GlobalRef = Below : NoStress (8/0)
+|   RESP_Min_GlobalRef = Above : Stress (9/2)
+|   RESP_Min_GlobalRef = Equal : NoStress (6/1)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 63
+|   |   RESP_Max < 18.5 : Stress (4/1)
+|   |   RESP_Max >= 18.5 : Stress (18/0)
+|   HR_Med >= 63 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal
+|   RESP_Mean_GlobalRef = Below : NoStress (5/0)
+|   RESP_Mean_GlobalRef = Above : Stress (5/0)
+|   RESP_Mean_GlobalRef = Equal : NoStress (3/1)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5
+|   TEMP_Min_GlobalRef = Below : NoStress (1/0)
+|   TEMP_Min_GlobalRef = Above : Stress (2/0)
+|   TEMP_Min_GlobalRef = Equal
+|   |   HR_Max < 84.5 : NoStress (13/0)
+|   |   HR_Max >= 84.5 : Stress (1/0)
+RESP_Mean >= 17.5
+|   GSR_Max < 40
+|   |   TEMP_Max_GlobalRef = Below : Stress (2/1)
+|   |   TEMP_Max_GlobalRef = Above : Stress (0/0)
+|   |   TEMP_Max_GlobalRef = Equal : Stress (17/0)
+|   GSR_Max >= 40 : NoStress (4/0)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Max < 1.5 : NoStress (5/0)
+|   TEMP_Max >= 1.5
+|   |   RESP_Mean < 17.5 : NoStress (14/0)
+|   |   RESP_Mean >= 17.5 : Stress (8/1)
+TEMP_Min >= -1.5
+|   GSR_Max < 74.5
+|   |   HR_Max < 68.5 : Stress (10/0)
+|   |   HR_Max >= 68.5 : NoStress (2/0)
+|   GSR_Max >= 74.5 : NoStress (1/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above
+|   HR_Max_GlobalRef = Below
+|   |   GSR_Med < 25 : Stress (15/0)
+|   |   GSR_Med >= 25 : NoStress (2/0)
+|   HR_Max_GlobalRef = Above : NoStress (5/0)
+|   HR_Max_GlobalRef = Equal : Stress (0/0)
+RESP_Mean_GlobalRef = Equal
+|   HR_Mod < 54 : Stress (2/0)
+|   HR_Mod >= 54 : NoStress (11/1)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above
+|   GSR_Mean < 26
+|   |   HRV_SDNN < 82.5 : Stress (17/0)
+|   |   HRV_SDNN >= 82.5 : NoStress (1/0)
+|   GSR_Mean >= 26 : NoStress (4/0)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below : NoStress (8/2)
+|   |   RESP_Min_GlobalRef = Above
+|   |   |   GSR_Med < 15.5 : Stress (8/0)
+|   |   |   GSR_Med >= 15.5 : NoStress (5/1)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 10
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below : Stress (11/4)
+|   RESP_Min_GlobalRef = Above
+|   |   GSR_SD_GlobalRef = Below : Stress (18/0)
+|   |   GSR_SD_GlobalRef = Above : NoStress (2/0)
+|   |   GSR_SD_GlobalRef = Equal : Stress (0/0)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 9
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          37               92.5    %
+Incorrectly Classified Instances         3                7.5    %
+Kappa statistic                          0.85  
+Mean absolute error                      0.201 
+Root mean squared error                  0.2462
+Relative absolute error                 40.1981 %
+Root relative squared error             49.2427 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.050    0.947      0.900    0.923      0.851    0.995     0.995     Stress
+                 0.950    0.100    0.905      0.950    0.927      0.851    0.995     0.995     NoStress
+Weighted Avg.    0.925    0.075    0.926      0.925    0.925      0.851    0.995     0.995     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+  1 19 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          28               70      %
+Incorrectly Classified Instances        12               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3756
+Root mean squared error                  0.4466
+Relative absolute error                 75.1156 %
+Root relative squared error             89.3297 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.250    0.722      0.650    0.684      0.402    0.755     0.807     Stress
+                 0.750    0.350    0.682      0.750    0.714      0.402    0.755     0.759     NoStress
+Weighted Avg.    0.700    0.300    0.702      0.700    0.699      0.402    0.755     0.783     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 8.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 8.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 62.5
+|   |   GSR_SD < 4 : Stress (11/0)
+|   |   GSR_SD >= 4 : Stress (5/1)
+|   HR_Med >= 62.5 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal
+|   HRV_rMSSD < 66.5 : NoStress (9/0)
+|   HRV_rMSSD >= 66.5 : Stress (8/4)
+
+Size of the tree : 10
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17
+|   HR_Mean < 62.5
+|   |   GSR_SD < 5.5 : Stress (9/3)
+|   |   GSR_SD >= 5.5 : Stress (13/0)
+|   HR_Mean >= 62.5 : NoStress (6/1)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal
+|   RESP_Min_GlobalRef = Below : NoStress (8/0)
+|   RESP_Min_GlobalRef = Above : Stress (9/2)
+|   RESP_Min_GlobalRef = Equal : NoStress (6/1)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 63
+|   |   RESP_Max < 18.5 : Stress (4/1)
+|   |   RESP_Max >= 18.5 : Stress (18/0)
+|   HR_Med >= 63 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5
+|   TEMP_Min_GlobalRef = Below : NoStress (1/0)
+|   TEMP_Min_GlobalRef = Above : Stress (2/0)
+|   TEMP_Min_GlobalRef = Equal : NoStress (14/1)
+RESP_Mean >= 17.5
+|   GSR_Max < 40
+|   |   RESP_Max < 19.5 : Stress (5/1)
+|   |   RESP_Max >= 19.5 : Stress (14/0)
+|   GSR_Max >= 40 : NoStress (4/0)
+
+Size of the tree : 10
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Max < 1.5 : NoStress (5/0)
+|   TEMP_Max >= 1.5
+|   |   RESP_Mean < 17.5 : NoStress (14/0)
+|   |   RESP_Mean >= 17.5 : Stress (8/1)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above
+|   HR_Max_GlobalRef = Below
+|   |   GSR_Med < 25 : Stress (15/0)
+|   |   GSR_Med >= 25 : NoStress (2/0)
+|   HR_Max_GlobalRef = Above : NoStress (5/0)
+|   HR_Max_GlobalRef = Equal : Stress (0/0)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above
+|   GSR_Mean < 26
+|   |   HRV_SDNN < 82.5 : Stress (17/0)
+|   |   HRV_SDNN >= 82.5 : NoStress (1/0)
+|   GSR_Mean >= 26 : NoStress (4/0)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below : NoStress (8/2)
+|   |   RESP_Min_GlobalRef = Above : Stress (13/4)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below : Stress (11/4)
+|   RESP_Min_GlobalRef = Above
+|   |   GSR_SD_GlobalRef = Below : Stress (18/0)
+|   |   GSR_SD_GlobalRef = Above : NoStress (2/0)
+|   |   GSR_SD_GlobalRef = Equal : Stress (0/0)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 9
+
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          37               92.5    %
+Incorrectly Classified Instances         3                7.5    %
+Kappa statistic                          0.85  
+Mean absolute error                      0.2511
+Root mean squared error                  0.2906
+Relative absolute error                 50.2266 %
+Root relative squared error             58.1297 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.050    0.947      0.900    0.923      0.851    0.980     0.977     Stress
+                 0.950    0.100    0.905      0.950    0.927      0.851    0.980     0.986     NoStress
+Weighted Avg.    0.925    0.075    0.926      0.925    0.925      0.851    0.980     0.981     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+  1 19 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          28               70      %
+Incorrectly Classified Instances        12               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.4014
+Root mean squared error                  0.4668
+Relative absolute error                 80.2721 %
+Root relative squared error             93.3674 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.250    0.722      0.650    0.684      0.402    0.691     0.757     Stress
+                 0.750    0.350    0.682      0.750    0.714      0.402    0.691     0.606     NoStress
+Weighted Avg.    0.700    0.300    0.702      0.700    0.699      0.402    0.691     0.682     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 10.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 10.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (17/2)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal : NoStress (17/4)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17
+|   HR_Mean < 62.5
+|   |   GSR_SD < 5.5 : Stress (9/3)
+|   |   GSR_SD >= 5.5 : Stress (13/0)
+|   HR_Mean >= 62.5 : NoStress (6/1)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal
+|   RESP_Min_GlobalRef = Below : NoStress (8/0)
+|   RESP_Min_GlobalRef = Above : Stress (9/2)
+|   RESP_Min_GlobalRef = Equal : NoStress (6/1)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below
+|   HR_Med < 63
+|   |   RESP_Max < 18.5 : Stress (4/1)
+|   |   RESP_Max >= 18.5 : Stress (18/0)
+|   HR_Med >= 63 : NoStress (1/0)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5 : NoStress (17/3)
+RESP_Mean >= 17.5
+|   TEMP_Mod < 0.5 : Stress (18/0)
+|   TEMP_Mod >= 0.5 : NoStress (5/0)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Max < 1.5 : NoStress (5/0)
+|   TEMP_Max >= 1.5
+|   |   RESP_Mean < 17.5 : NoStress (14/0)
+|   |   RESP_Mean >= 17.5 : Stress (8/1)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above
+|   HR_Max_GlobalRef = Below : Stress (17/2)
+|   HR_Max_GlobalRef = Above : NoStress (5/0)
+|   HR_Max_GlobalRef = Equal : Stress (0/0)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above
+|   GSR_Mean < 26 : Stress (18/1)
+|   GSR_Mean >= 26 : NoStress (4/0)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 6
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below : NoStress (8/2)
+|   |   RESP_Min_GlobalRef = Above : Stress (13/4)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below : Stress (11/4)
+|   RESP_Min_GlobalRef = Above
+|   |   GSR_SD_GlobalRef = Below : Stress (18/0)
+|   |   GSR_SD_GlobalRef = Above : NoStress (2/0)
+|   |   GSR_SD_GlobalRef = Equal : Stress (0/0)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 9
+
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          36               90      %
+Incorrectly Classified Instances         4               10      %
+Kappa statistic                          0.8   
+Mean absolute error                      0.2754
+Root mean squared error                  0.3147
+Relative absolute error                 55.0801 %
+Root relative squared error             62.9449 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.050    0.944      0.850    0.895      0.804    0.975     0.971     Stress
+                 0.950    0.150    0.864      0.950    0.905      0.804    0.975     0.982     NoStress
+Weighted Avg.    0.900    0.100    0.904      0.900    0.900      0.804    0.975     0.976     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  1 19 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4203
+Root mean squared error                  0.4742
+Relative absolute error                 84.0519 %
+Root relative squared error             94.838  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.300    0.684      0.650    0.667      0.350    0.689     0.749     Stress
+                 0.700    0.350    0.667      0.700    0.683      0.350    0.689     0.633     NoStress
+Weighted Avg.    0.675    0.325    0.675      0.675    0.675      0.350    0.689     0.691     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 12.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 12.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (17/2)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal : NoStress (17/4)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17
+|   HR_Mean < 62.5 : Stress (22/3)
+|   HR_Mean >= 62.5 : NoStress (6/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal : NoStress (23/8)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (23/2)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5 : NoStress (17/3)
+RESP_Mean >= 17.5 : Stress (23/5)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Max < 1.5 : NoStress (5/0)
+|   TEMP_Max >= 1.5 : NoStress (22/7)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above : Stress (22/7)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above : Stress (22/5)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below : NoStress (8/2)
+|   |   RESP_Min_GlobalRef = Above : Stress (13/4)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below : Stress (11/4)
+|   RESP_Min_GlobalRef = Above : Stress (20/2)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 6
+
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          34               85      %
+Incorrectly Classified Instances         6               15      %
+Kappa statistic                          0.7   
+Mean absolute error                      0.3517
+Root mean squared error                  0.3855
+Relative absolute error                 70.3401 %
+Root relative squared error             77.0997 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.200    0.818      0.900    0.857      0.704    0.890     0.824     Stress
+                 0.800    0.100    0.889      0.800    0.842      0.704    0.890     0.926     NoStress
+Weighted Avg.    0.850    0.150    0.854      0.850    0.850      0.704    0.890     0.875     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4232
+Root mean squared error                  0.471 
+Relative absolute error                 84.6424 %
+Root relative squared error             94.1915 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.300    0.684      0.650    0.667      0.350    0.684     0.741     Stress
+                 0.700    0.350    0.667      0.700    0.683      0.350    0.684     0.691     NoStress
+Weighted Avg.    0.675    0.325    0.675      0.675    0.675      0.350    0.684     0.716     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 14.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 14.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (17/2)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal : NoStress (17/4)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17
+|   HR_Mean < 62.5 : Stress (22/3)
+|   HR_Mean >= 62.5 : NoStress (6/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal : NoStress (23/8)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (23/2)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5 : NoStress (17/3)
+RESP_Mean >= 17.5 : Stress (23/5)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (27/7)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above : Stress (22/7)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above : Stress (22/5)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5
+|   |   RESP_Min_GlobalRef = Below : NoStress (8/2)
+|   |   RESP_Min_GlobalRef = Above : Stress (13/4)
+|   |   RESP_Min_GlobalRef = Equal : NoStress (10/0)
+
+Size of the tree : 8
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below : Stress (11/4)
+|   RESP_Min_GlobalRef = Above : Stress (20/2)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 6
+
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          34               85      %
+Incorrectly Classified Instances         6               15      %
+Kappa statistic                          0.7   
+Mean absolute error                      0.3516
+Root mean squared error                  0.3854
+Relative absolute error                 70.3224 %
+Root relative squared error             77.0739 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.200    0.818      0.900    0.857      0.704    0.889     0.822     Stress
+                 0.800    0.100    0.889      0.800    0.842      0.704    0.889     0.926     NoStress
+Weighted Avg.    0.850    0.150    0.854      0.850    0.850      0.704    0.889     0.874     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4307
+Root mean squared error                  0.4699
+Relative absolute error                 86.1398 %
+Root relative squared error             93.9735 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.300    0.667      0.600    0.632      0.302    0.685     0.702     Stress
+                 0.700    0.400    0.636      0.700    0.667      0.302    0.685     0.701     NoStress
+Weighted Avg.    0.650    0.350    0.652      0.650    0.649      0.302    0.685     0.701     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 16.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 16.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (17/2)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal : NoStress (17/4)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17 : Stress (28/8)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal : NoStress (23/8)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (23/2)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5 : NoStress (17/3)
+RESP_Mean >= 17.5 : Stress (23/5)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (27/7)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above : Stress (22/7)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above : Stress (22/5)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5
+|   HR_Min < 53.5 : Stress (4/0)
+|   HR_Min >= 53.5 : NoStress (31/11)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5
+|   RESP_Min_GlobalRef = Below : Stress (11/4)
+|   RESP_Min_GlobalRef = Above : Stress (20/2)
+|   RESP_Min_GlobalRef = Equal : NoStress (4/1)
+
+Size of the tree : 6
+
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          33               82.5    %
+Incorrectly Classified Instances         7               17.5    %
+Kappa statistic                          0.65  
+Mean absolute error                      0.3725
+Root mean squared error                  0.4014
+Relative absolute error                 74.5055 %
+Root relative squared error             80.289  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.200    0.810      0.850    0.829      0.651    0.869     0.786     Stress
+                 0.800    0.150    0.842      0.800    0.821      0.651    0.869     0.911     NoStress
+Weighted Avg.    0.825    0.175    0.826      0.825    0.825      0.651    0.869     0.849     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.453 
+Root mean squared error                  0.4847
+Relative absolute error                 90.5996 %
+Root relative squared error             96.9303 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.649     0.659     Stress
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.649     0.669     NoStress
+Weighted Avg.    0.600    0.400    0.600      0.600    0.600      0.200    0.649     0.664     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 18.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 18.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (17/2)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal : NoStress (17/4)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17 : Stress (28/8)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal : NoStress (23/8)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (23/2)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5 : NoStress (17/3)
+RESP_Mean >= 17.5 : Stress (23/5)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (27/7)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above : Stress (22/7)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above : Stress (22/5)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5 : NoStress (35/15)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5 : Stress (35/9)
+
+Size of the tree : 3
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          33               82.5    %
+Incorrectly Classified Instances         7               17.5    %
+Kappa statistic                          0.65  
+Mean absolute error                      0.3861
+Root mean squared error                  0.4098
+Relative absolute error                 77.2153 %
+Root relative squared error             81.9596 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.200    0.810      0.850    0.829      0.651    0.865     0.809     Stress
+                 0.800    0.150    0.842      0.800    0.821      0.651    0.865     0.901     NoStress
+Weighted Avg.    0.825    0.175    0.826      0.825    0.825      0.651    0.865     0.855     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.4567
+Root mean squared error                  0.4871
+Relative absolute error                 91.3488 %
+Root relative squared error             97.413  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.649     0.659     Stress
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.649     0.666     NoStress
+Weighted Avg.    0.600    0.400    0.600      0.600    0.600      0.200    0.649     0.663     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 20.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 20.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (17/2)
+RESP_SD_GlobalRef = Above : NoStress (6/0)
+RESP_SD_GlobalRef = Equal : NoStress (17/4)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Med < 17 : NoStress (12/1)
+RESP_Med >= 17 : Stress (28/8)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min_GlobalRef = Below : NoStress (10/4)
+TEMP_Min_GlobalRef = Above : Stress (7/0)
+TEMP_Min_GlobalRef = Equal : NoStress (23/8)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_SD_GlobalRef = Below : Stress (23/2)
+RESP_SD_GlobalRef = Above : NoStress (4/0)
+RESP_SD_GlobalRef = Equal : NoStress (13/6)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean < 17.5 : NoStress (17/3)
+RESP_Mean >= 17.5 : Stress (23/5)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (27/7)
+TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (5/1)
+RESP_Mean_GlobalRef = Above : Stress (22/7)
+RESP_Mean_GlobalRef = Equal : NoStress (13/3)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+RESP_Mean_GlobalRef = Below : NoStress (11/4)
+RESP_Mean_GlobalRef = Above : Stress (22/5)
+RESP_Mean_GlobalRef = Equal : NoStress (7/1)
+
+Size of the tree : 4
+
+
+RandomTree
+==========
+
+HR_Med < 58.5 : Stress (5/0)
+HR_Med >= 58.5 : NoStress (35/15)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+RESP_Min < 11.5 : NoStress (5/0)
+RESP_Min >= 11.5 : Stress (35/9)
+
+Size of the tree : 3
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          33               82.5    %
+Incorrectly Classified Instances         7               17.5    %
+Kappa statistic                          0.65  
+Mean absolute error                      0.3861
+Root mean squared error                  0.4098
+Relative absolute error                 77.2153 %
+Root relative squared error             81.9596 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.200    0.810      0.850    0.829      0.651    0.865     0.809     Stress
+                 0.800    0.150    0.842      0.800    0.821      0.651    0.865     0.901     NoStress
+Weighted Avg.    0.825    0.175    0.826      0.825    0.825      0.651    0.865     0.855     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5003
+Relative absolute error                100      %
+Root relative squared error            100.0626 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.600    0.500      0.600    0.545      0.000    0.500     0.500     Stress
+                 0.400    0.400    0.500      0.400    0.444      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.495      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+ 12  8 |  b = NoStress
+
+

@@ -1,0 +1,702 @@
+
+Options: -U -M 2.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5
+|  HR_Mean < 58.5: Stress(3.0/0.0)
+|  HR_Mean >= 58.5
+|  |  Ratio_T_HR_Max < 71.5: NoStress(14.0/0.0)
+|  |  Ratio_T_HR_Max >= 71.5
+|  |  |  RESP_Mean < 17.5: NoStress(4.0/1.0)
+|  |  |  RESP_Mean >= 17.5: Stress(3.0/0.0)
+Ratio_R_G_Max >= 22.5
+|  RESP_Mean < 16.5: NoStress(2.0/1.0)
+|  RESP_Mean >= 16.5: Stress(12.0/0.0)
+
+Number of Leaf Nodes: 6
+
+Size of the Tree: 11
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          38               95      %
+Incorrectly Classified Instances         2                5      %
+Kappa statistic                          0.9   
+Mean absolute error                      0.0733
+Root mean squared error                  0.1915
+Relative absolute error                 14.6667 %
+Root relative squared error             38.2971 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.000    1.000      0.900    0.947      0.905    0.988     0.984     Stress
+                 1.000    0.100    0.909      1.000    0.952      0.905    0.988     0.980     NoStress
+Weighted Avg.    0.950    0.050    0.955      0.950    0.950      0.905    0.988     0.982     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+  0 20 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.3569
+Root mean squared error                  0.5604
+Relative absolute error                 71.3712 %
+Root relative squared error            112.0843 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.300    0.667      0.600    0.632      0.302    0.665     0.684     Stress
+                 0.700    0.400    0.636      0.700    0.667      0.302    0.665     0.596     NoStress
+Weighted Avg.    0.650    0.350    0.652      0.650    0.649      0.302    0.665     0.640     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -U -M 4.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5: NoStress(18.0/7.0)
+Ratio_R_G_Max >= 22.5: Stress(13.0/2.0)
+
+Number of Leaf Nodes: 2
+
+Size of the Tree: 3
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.3387
+Root mean squared error                  0.4115
+Relative absolute error                 67.7333 %
+Root relative squared error             82.3003 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.100    0.867      0.650    0.743      0.568    0.775     0.738     Stress
+                 0.900    0.350    0.720      0.900    0.800      0.568    0.775     0.698     NoStress
+Weighted Avg.    0.775    0.225    0.793      0.775    0.771      0.568    0.775     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          23               57.5    %
+Incorrectly Classified Instances        17               42.5    %
+Kappa statistic                          0.15  
+Mean absolute error                      0.4481
+Root mean squared error                  0.5565
+Relative absolute error                 89.6152 %
+Root relative squared error            111.2947 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.350    0.588      0.500    0.541      0.152    0.569     0.561     Stress
+                 0.650    0.500    0.565      0.650    0.605      0.152    0.569     0.554     NoStress
+Weighted Avg.    0.575    0.425    0.577      0.575    0.573      0.152    0.569     0.557     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 10 10 |  a = Stress
+  7 13 |  b = NoStress
+
+
+
+Options: -U -M 6.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5: NoStress(18.0/7.0)
+Ratio_R_G_Max >= 22.5: Stress(13.0/2.0)
+
+Number of Leaf Nodes: 2
+
+Size of the Tree: 3
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.3387
+Root mean squared error                  0.4115
+Relative absolute error                 67.7333 %
+Root relative squared error             82.3003 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.100    0.867      0.650    0.743      0.568    0.775     0.738     Stress
+                 0.900    0.350    0.720      0.900    0.800      0.568    0.775     0.698     NoStress
+Weighted Avg.    0.775    0.225    0.793      0.775    0.771      0.568    0.775     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.4428
+Root mean squared error                  0.5332
+Relative absolute error                 88.5566 %
+Root relative squared error            106.6336 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.300    0.625      0.500    0.556      0.204    0.581     0.547     Stress
+                 0.700    0.500    0.583      0.700    0.636      0.204    0.581     0.565     NoStress
+Weighted Avg.    0.600    0.400    0.604      0.600    0.596      0.204    0.581     0.556     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 10 10 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -U -M 8.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5: NoStress(18.0/7.0)
+Ratio_R_G_Max >= 22.5: Stress(13.0/2.0)
+
+Number of Leaf Nodes: 2
+
+Size of the Tree: 3
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.3387
+Root mean squared error                  0.4115
+Relative absolute error                 67.7333 %
+Root relative squared error             82.3003 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.100    0.867      0.650    0.743      0.568    0.775     0.738     Stress
+                 0.900    0.350    0.720      0.900    0.800      0.568    0.775     0.698     NoStress
+Weighted Avg.    0.775    0.225    0.793      0.775    0.771      0.568    0.775     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4317
+Root mean squared error                  0.5163
+Relative absolute error                 86.3488 %
+Root relative squared error            103.2601 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.250    0.667      0.500    0.571      0.258    0.598     0.553     Stress
+                 0.750    0.500    0.600      0.750    0.667      0.258    0.598     0.588     NoStress
+Weighted Avg.    0.625    0.375    0.633      0.625    0.619      0.258    0.598     0.570     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 10 10 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -U -M 10.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5: NoStress(18.0/7.0)
+Ratio_R_G_Max >= 22.5: Stress(13.0/2.0)
+
+Number of Leaf Nodes: 2
+
+Size of the Tree: 3
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.3387
+Root mean squared error                  0.4115
+Relative absolute error                 67.7333 %
+Root relative squared error             82.3003 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.100    0.867      0.650    0.743      0.568    0.775     0.738     Stress
+                 0.900    0.350    0.720      0.900    0.800      0.568    0.775     0.698     NoStress
+Weighted Avg.    0.775    0.225    0.793      0.775    0.771      0.568    0.775     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4317
+Root mean squared error                  0.5163
+Relative absolute error                 86.3488 %
+Root relative squared error            103.2601 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.250    0.667      0.500    0.571      0.258    0.598     0.553     Stress
+                 0.750    0.500    0.600      0.750    0.667      0.258    0.598     0.588     NoStress
+Weighted Avg.    0.625    0.375    0.633      0.625    0.619      0.258    0.598     0.570     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 10 10 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -U -M 12.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5: NoStress(18.0/7.0)
+Ratio_R_G_Max >= 22.5: Stress(13.0/2.0)
+
+Number of Leaf Nodes: 2
+
+Size of the Tree: 3
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.3387
+Root mean squared error                  0.4115
+Relative absolute error                 67.7333 %
+Root relative squared error             82.3003 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.100    0.867      0.650    0.743      0.568    0.775     0.738     Stress
+                 0.900    0.350    0.720      0.900    0.800      0.568    0.775     0.698     NoStress
+Weighted Avg.    0.775    0.225    0.793      0.775    0.771      0.568    0.775     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.4465
+Root mean squared error                  0.5241
+Relative absolute error                 89.2943 %
+Root relative squared error            104.8198 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.550    0.350    0.611      0.550    0.579      0.201    0.588     0.541     Stress
+                 0.650    0.450    0.591      0.650    0.619      0.201    0.588     0.583     NoStress
+Weighted Avg.    0.600    0.400    0.601      0.600    0.599      0.201    0.588     0.562     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 11  9 |  a = Stress
+  7 13 |  b = NoStress
+
+
+
+Options: -U -M 14.0 
+
+CART Decision Tree
+
+Ratio_R_G_Max < 22.5: NoStress(18.0/7.0)
+Ratio_R_G_Max >= 22.5: Stress(13.0/2.0)
+
+Number of Leaf Nodes: 2
+
+Size of the Tree: 3
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.3387
+Root mean squared error                  0.4115
+Relative absolute error                 67.7333 %
+Root relative squared error             82.3003 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.100    0.867      0.650    0.743      0.568    0.775     0.738     Stress
+                 0.900    0.350    0.720      0.900    0.800      0.568    0.775     0.698     NoStress
+Weighted Avg.    0.775    0.225    0.793      0.775    0.771      0.568    0.775     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.4465
+Root mean squared error                  0.5085
+Relative absolute error                 89.2943 %
+Root relative squared error            101.6918 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.500    0.583      0.700    0.636      0.204    0.605     0.555     Stress
+                 0.500    0.300    0.625      0.500    0.556      0.204    0.605     0.587     NoStress
+Weighted Avg.    0.600    0.400    0.604      0.600    0.596      0.204    0.605     0.571     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+Options: -U -M 16.0 
+
+CART Decision Tree
+: Stress(20.0/20.0)
+
+Number of Leaf Nodes: 1
+
+Size of the Tree: 1
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          23               57.5    %
+Incorrectly Classified Instances        17               42.5    %
+Kappa statistic                          0.15  
+Mean absolute error                      0.4582
+Root mean squared error                  0.4822
+Relative absolute error                 91.6319 %
+Root relative squared error             96.4321 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.750    0.545      0.900    0.679      0.197    0.623     0.578     Stress
+                 0.250    0.100    0.714      0.250    0.370      0.197    0.623     0.574     NoStress
+Weighted Avg.    0.575    0.425    0.630      0.575    0.525      0.197    0.623     0.576     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+ 15  5 |  b = NoStress
+
+
+
+Options: -U -M 18.0 
+
+CART Decision Tree
+: Stress(20.0/20.0)
+
+Number of Leaf Nodes: 1
+
+Size of the Tree: 1
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          22               55      %
+Incorrectly Classified Instances        18               45      %
+Kappa statistic                          0.1   
+Mean absolute error                      0.4722
+Root mean squared error                  0.4875
+Relative absolute error                 94.4444 %
+Root relative squared error             97.4996 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.900    0.800    0.529      0.900    0.667      0.140    0.590     0.574     Stress
+                 0.200    0.100    0.667      0.200    0.308      0.140    0.590     0.554     NoStress
+Weighted Avg.    0.550    0.450    0.598      0.550    0.487      0.140    0.590     0.564     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = Stress
+ 16  4 |  b = NoStress
+
+
+
+Options: -U -M 20.0 
+
+CART Decision Tree
+: Stress(20.0/20.0)
+
+Number of Leaf Nodes: 1
+
+Size of the Tree: 1
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+

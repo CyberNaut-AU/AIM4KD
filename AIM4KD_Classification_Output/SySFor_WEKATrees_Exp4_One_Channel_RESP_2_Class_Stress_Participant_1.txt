@@ -1,0 +1,1056 @@
+
+Options: -N 10 -L 2 
+
+Tree 1: 
+RESP_Min <= 11.5: NoStress {Stress,0;NoStress,5;} (5/0)
+RESP_Min > 11.5
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   |   RESP_SD > 1: NoStress (11.0/2.0)
+|   RESP_Mean > 17
+|   |   RESP_Mod <= 17: NoStress (2.0)
+|   |   RESP_Mod > 17: Stress (17.0/2.0)
+
+Tree 2: 
+RESP_Mod <= 15.5: NoStress {Stress,0;NoStress,5;} (5/0)
+RESP_Mod > 15.5
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   |   RESP_SD > 1: NoStress (11.0/2.0)
+|   RESP_Mean > 17
+|   |   RESP_Mod <= 17: NoStress (2.0)
+|   |   RESP_Mod > 17: Stress (17.0/2.0)
+
+Tree 3: 
+RESP_Mean <= 17.5
+|   RESP_SD <= 1
+|   |   RESP_Min <= 13: Stress (2.0)
+|   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   RESP_SD > 1: NoStress (16.0/2.0)
+RESP_Mean > 17.5
+|   RESP_Mod <= 17: NoStress (2.0)
+|   RESP_Mod > 17: Stress (17.0/2.0)
+
+Tree 4: 
+RESP_SD <= 2.5
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   |   RESP_SD > 1: NoStress (12.0/2.0)
+|   RESP_Mean > 17
+|   |   RESP_Mod <= 17: NoStress (2.0)
+|   |   RESP_Mod > 17: Stress (17.0/2.0)
+RESP_SD > 2.5: NoStress {Stress,0;NoStress,4;} (4/0)
+
+Tree 5: 
+RESP_Min <= 17.5
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   |   RESP_SD > 1: NoStress (16.0/2.0)
+|   RESP_Mean > 17
+|   |   RESP_Mod <= 17: NoStress (2.0)
+|   |   RESP_Mod > 17: Stress (14.0/2.0)
+RESP_Min > 17.5: Stress {Stress,3;NoStress,0;} (3/0)
+
+Tree 6: 
+RESP_Min <= 14.5
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (2.0)
+|   |   RESP_SD > 1: NoStress (16.0/2.0)
+|   RESP_Mean > 17: Stress (2.0)
+RESP_Min > 14.5
+|   RESP_Mod <= 17: NoStress (3.0/1.0)
+|   RESP_Mod > 17: Stress (15.0/2.0)
+
+Tree 7: 
+RESP_Med <= 15.0: NoStress {Stress,0;NoStress,2;} (2/0)
+RESP_Med > 15.0
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   |   RESP_SD > 1: NoStress (14.0/2.0)
+|   RESP_Mean > 17
+|   |   RESP_Mod <= 17: NoStress (2.0)
+|   |   RESP_Mod > 17: Stress (17.0/2.0)
+
+Tree 8: 
+RESP_Mod <= 18.5
+|   RESP_SD <= 1
+|   |   RESP_Mod <= 17
+|   |   |   RESP_Min <= 13: Stress (2.0)
+|   |   |   RESP_Min > 13: NoStress (5.0/1.0)
+|   |   RESP_Mod > 17: Stress (4.0/1.0)
+|   RESP_SD > 1: NoStress (14.0/2.0)
+RESP_Mod > 18.5
+|   RESP_Mean <= 17: NoStress (3.0/1.0)
+|   RESP_Mean > 17: Stress (12.0/1.0)
+
+Tree 9: 
+RESP_Med <= 17.5
+|   RESP_SD <= 1
+|   |   RESP_Min <= 13: Stress (2.0)
+|   |   RESP_Min > 13: NoStress (3.0/1.0)
+|   RESP_SD > 1: NoStress (13.0/2.0)
+RESP_Med > 17.5
+|   RESP_Mean <= 17: NoStress (3.0)
+|   RESP_Mean > 17
+|   |   RESP_Mod <= 17: NoStress (2.0)
+|   |   RESP_Mod > 17: Stress (17.0/2.0)
+
+Tree 10: 
+RESP_SD <= 1.5
+|   RESP_Mod <= 17
+|   |   RESP_Min <= 13: Stress (2.0)
+|   |   RESP_Min > 13: NoStress (5.0/1.0)
+|   RESP_Mod > 17: Stress (13.0/2.0)
+RESP_SD > 1.5
+|   RESP_Mean <= 17: NoStress (16.0/2.0)
+|   RESP_Mean > 17: Stress (4.0)
+
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          35               87.5    %
+Incorrectly Classified Instances         5               12.5    %
+Kappa statistic                          0.75  
+Mean absolute error                      0.1275
+Root mean squared error                  0.3539
+Relative absolute error                 25.5    %
+Root relative squared error             70.7814 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.100    0.895      0.850    0.872      0.751    0.873     0.831     Stress
+                 0.900    0.150    0.857      0.900    0.878      0.751    0.873     0.821     NoStress
+Weighted Avg.    0.875    0.125    0.876      0.875    0.875      0.751    0.873     0.826     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.255 
+Root mean squared error                  0.4631
+Relative absolute error                 51      %
+Root relative squared error             92.6283 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.300    0.739      0.850    0.791      0.556    0.764     0.704     Stress
+                 0.700    0.150    0.824      0.700    0.757      0.556    0.764     0.728     NoStress
+Weighted Avg.    0.775    0.225    0.781      0.775    0.774      0.556    0.764     0.716     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+Options: -N 10 -L 4 
+
+Tree 1: 
+RESP_Min <= 11.5: NoStress {Stress,0;NoStress,5;} (5/0)
+RESP_Min > 11.5
+|   RESP_Mean <= 17: NoStress (16.0/5.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 2: 
+RESP_Mod <= 15.5: NoStress {Stress,0;NoStress,5;} (5/0)
+RESP_Mod > 15.5
+|   RESP_Mean <= 17: NoStress (16.0/5.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 3: 
+RESP_Mean <= 17.5
+|   RESP_SD <= 1: Stress (5.0/2.0)
+|   RESP_SD > 1: NoStress (16.0/2.0)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 4: 
+RESP_SD <= 2.5
+|   RESP_Mean <= 17: NoStress (17.0/5.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+RESP_SD > 2.5: NoStress {Stress,0;NoStress,4;} (4/0)
+
+Tree 5: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 6: 
+RESP_Mod <= 18.5: NoStress {Stress,8;NoStress,17;} (25/8)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+Tree 7: 
+RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Med > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 8: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5
+|   RESP_Mean <= 17: NoStress (16.0/2.0)
+|   RESP_Mean > 17: Stress (4.0)
+
+Tree 9: 
+RESP_Med <= 18.5
+|   RESP_Mean <= 17
+|   |   RESP_SD <= 1: Stress (5.0/2.0)
+|   |   RESP_SD > 1: NoStress (16.0/2.0)
+|   RESP_Mean > 17: Stress (13.0/3.0)
+RESP_Med > 18.5: Stress {Stress,5;NoStress,1;} (6/1)
+
+Tree 10: 
+RESP_Max <= 20.5
+|   RESP_Mean <= 17: NoStress (19.0/5.0)
+|   RESP_Mean > 17: Stress (16.0/4.0)
+RESP_Max > 20.5: Stress {Stress,3;NoStress,2;} (5/2)
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.23  
+Root mean squared error                  0.4147
+Relative absolute error                 46      %
+Root relative squared error             82.9458 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.860     0.822     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.860     0.833     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.860     0.828     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          30               75      %
+Incorrectly Classified Instances        10               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.2792
+Root mean squared error                  0.4803
+Relative absolute error                 55.8344 %
+Root relative squared error             96.0623 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.200    0.778      0.700    0.737      0.503    0.763     0.677     Stress
+                 0.800    0.300    0.727      0.800    0.762      0.503    0.763     0.745     NoStress
+Weighted Avg.    0.750    0.250    0.753      0.750    0.749      0.503    0.763     0.711     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+Options: -N 10 -L 6 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Mod <= 18.5: NoStress {Stress,8;NoStress,17;} (25/8)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+Tree 4: 
+RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Med > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 5: 
+RESP_Mod <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Mod > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 6: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5
+|   RESP_Mod <= 18: NoStress (14.0/2.0)
+|   RESP_Mod > 18: Stress (6.0/2.0)
+
+Tree 7: 
+RESP_Med <= 18.5
+|   RESP_Mean <= 17: NoStress (21.0/5.0)
+|   RESP_Mean > 17: Stress (13.0/3.0)
+RESP_Med > 18.5: Stress {Stress,5;NoStress,1;} (6/1)
+
+Tree 8: 
+RESP_Max <= 19.5
+|   RESP_Min <= 14: NoStress (7.0/2.0)
+|   RESP_Min > 14: Stress (6.0/1.0)
+RESP_Max > 19.5
+|   RESP_Mean <= 17: NoStress (13.0/2.0)
+|   RESP_Mean > 17: Stress (14.0/3.0)
+
+Tree 9: 
+RESP_Mean <= 17.5
+|   RESP_Mean <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Mean > 16.5: NoStress {Stress,3;NoStress,7;} (10/3)
+RESP_Mean > 17.5
+|   RESP_Min <= 15.5: Stress {Stress,7;NoStress,1;} (8/1)
+|   RESP_Min > 15.5: Stress {Stress,8;NoStress,3;} (11/3)
+
+Tree 10: 
+RESP_Mean <= 17.5
+|   RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Med > 16.5: NoStress {Stress,3;NoStress,7;} (10/3)
+RESP_Mean > 17.5
+|   RESP_Med <= 18.5: Stress {Stress,10;NoStress,3;} (13/3)
+|   RESP_Med > 18.5: Stress {Stress,5;NoStress,1;} (6/1)
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.2325
+Root mean squared error                  0.4304
+Relative absolute error                 46.5    %
+Root relative squared error             86.0814 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.860     0.822     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.860     0.839     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.860     0.831     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.27  
+Root mean squared error                  0.4483
+Relative absolute error                 54      %
+Root relative squared error             89.666  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.773     0.694     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.773     0.764     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.773     0.729     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+Options: -N 10 -L 8 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Mod <= 18.5: NoStress {Stress,8;NoStress,17;} (25/8)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+Tree 4: 
+RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Med > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 5: 
+RESP_Mod <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Mod > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 6: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+Tree 7: 
+RESP_Max <= 19.5: Stress {Stress,7;NoStress,6;} (13/6)
+RESP_Max > 19.5
+|   RESP_Mean <= 17: NoStress (13.0/2.0)
+|   RESP_Mean > 17: Stress (14.0/3.0)
+
+Tree 8: 
+RESP_Mean <= 17.5
+|   RESP_Mean <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Mean > 16.5: NoStress {Stress,3;NoStress,7;} (10/3)
+RESP_Mean > 17.5
+|   RESP_Min <= 15.5: Stress {Stress,7;NoStress,1;} (8/1)
+|   RESP_Min > 15.5: Stress {Stress,8;NoStress,3;} (11/3)
+
+Tree 9: 
+RESP_Mean <= 17.5
+|   RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Med > 16.5: NoStress {Stress,3;NoStress,7;} (10/3)
+RESP_Mean > 17.5
+|   RESP_Min <= 15.5: Stress {Stress,7;NoStress,1;} (8/1)
+|   RESP_Min > 15.5: Stress {Stress,8;NoStress,3;} (11/3)
+
+Tree 10: 
+RESP_Mean <= 17.5
+|   RESP_Mod <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Mod > 16.5: NoStress {Stress,3;NoStress,7;} (10/3)
+RESP_Mean > 17.5
+|   RESP_Min <= 15.5: Stress {Stress,7;NoStress,1;} (8/1)
+|   RESP_Min > 15.5: Stress {Stress,8;NoStress,3;} (11/3)
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.245 
+Root mean squared error                  0.4284
+Relative absolute error                 49      %
+Root relative squared error             85.6738 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.843     0.795     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.843     0.821     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.843     0.808     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.285 
+Root mean squared error                  0.455 
+Relative absolute error                 57      %
+Root relative squared error             90.9945 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.768     0.681     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.768     0.765     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.768     0.723     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+Options: -N 10 -L 10 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Mod <= 18.5: NoStress {Stress,8;NoStress,17;} (25/8)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+Tree 4: 
+RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Med > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 5: 
+RESP_Mod <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+RESP_Mod > 16.5
+|   RESP_Mean <= 17: NoStress (10.0/3.0)
+|   RESP_Mean > 17: Stress (19.0/4.0)
+
+Tree 6: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+Tree 7: 
+RESP_Max <= 19.5: Stress {Stress,7;NoStress,6;} (13/6)
+RESP_Max > 19.5
+|   RESP_Mean <= 17: NoStress (13.0/2.0)
+|   RESP_Mean > 17: Stress (14.0/3.0)
+
+Tree 8: 
+RESP_Mean <= 17.5
+|   RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Med > 16.5: NoStress {Stress,3;NoStress,7;} (10/3)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 9: 
+RESP_Min <= 14.5
+|   RESP_Med <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Med > 16.5: NoStress {Stress,4;NoStress,7;} (11/4)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 10: 
+RESP_Mod <= 18.5
+|   RESP_Mean <= 16.5: NoStress {Stress,2;NoStress,9;} (11/2)
+|   RESP_Mean > 16.5: NoStress {Stress,6;NoStress,8;} (14/6)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          29               72.5    %
+Incorrectly Classified Instances        11               27.5    %
+Kappa statistic                          0.45  
+Mean absolute error                      0.3277
+Root mean squared error                  0.4312
+Relative absolute error                 65.5341 %
+Root relative squared error             86.2373 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.200    0.765      0.650    0.703      0.455    0.843     0.795     Stress
+                 0.800    0.350    0.696      0.800    0.744      0.455    0.843     0.821     NoStress
+Weighted Avg.    0.725    0.275    0.730      0.725    0.723      0.455    0.843     0.808     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          30               75      %
+Incorrectly Classified Instances        10               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.3133
+Root mean squared error                  0.4513
+Relative absolute error                 62.6684 %
+Root relative squared error             90.2642 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.250    0.750      0.750    0.750      0.500    0.796     0.766     Stress
+                 0.750    0.250    0.750      0.750    0.750      0.500    0.796     0.781     NoStress
+Weighted Avg.    0.750    0.250    0.750      0.750    0.750      0.500    0.796     0.774     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -N 10 -L 12 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Mod <= 18.5: NoStress {Stress,8;NoStress,17;} (25/8)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+Tree 4: 
+RESP_Med <= 17.5: NoStress {Stress,5;NoStress,13;} (18/5)
+RESP_Med > 17.5: Stress {Stress,15;NoStress,7;} (22/7)
+
+Tree 5: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+Tree 6: 
+RESP_Max <= 19.5: Stress {Stress,7;NoStress,6;} (13/6)
+RESP_Max > 19.5
+|   RESP_Mean <= 17: NoStress (13.0/2.0)
+|   RESP_Mean > 17: Stress (14.0/3.0)
+
+Tree 7: 
+RESP_Max <= 19.5: Stress {Stress,7;NoStress,6;} (13/6)
+RESP_Max > 19.5
+|   RESP_Min <= 14.5: NoStress {Stress,4;NoStress,11;} (15/4)
+|   RESP_Min > 14.5: Stress {Stress,9;NoStress,3;} (12/3)
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          30               75      %
+Incorrectly Classified Instances        10               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.2821
+Root mean squared error                  0.4268
+Relative absolute error                 56.4286 %
+Root relative squared error             85.3564 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.200    0.778      0.700    0.737      0.503    0.823     0.768     Stress
+                 0.800    0.300    0.727      0.800    0.762      0.503    0.823     0.803     NoStress
+Weighted Avg.    0.750    0.250    0.753      0.750    0.749      0.503    0.823     0.785     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.2954
+Root mean squared error                  0.437 
+Relative absolute error                 59.0723 %
+Root relative squared error             87.3957 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.813     0.781     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.813     0.785     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.813     0.783     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+Options: -N 10 -L 14 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Mod <= 18.5: NoStress {Stress,8;NoStress,17;} (25/8)
+RESP_Mod > 18.5: Stress {Stress,12;NoStress,3;} (15/3)
+
+Tree 4: 
+RESP_Med <= 17.5: NoStress {Stress,5;NoStress,13;} (18/5)
+RESP_Med > 17.5: Stress {Stress,15;NoStress,7;} (22/7)
+
+Tree 5: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          30               75      %
+Incorrectly Classified Instances        10               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.27  
+Root mean squared error                  0.429 
+Relative absolute error                 54      %
+Root relative squared error             85.7904 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.200    0.778      0.700    0.737      0.503    0.831     0.785     Stress
+                 0.800    0.300    0.727      0.800    0.762      0.503    0.831     0.810     NoStress
+Weighted Avg.    0.750    0.250    0.753      0.750    0.749      0.503    0.831     0.798     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          30               75      %
+Incorrectly Classified Instances        10               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.285 
+Root mean squared error                  0.4416
+Relative absolute error                 57      %
+Root relative squared error             88.3176 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.200    0.778      0.700    0.737      0.503    0.805     0.743     Stress
+                 0.800    0.300    0.727      0.800    0.762      0.503    0.805     0.782     NoStress
+Weighted Avg.    0.750    0.250    0.753      0.750    0.749      0.503    0.805     0.762     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+Options: -N 10 -L 16 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Mod <= 17.5: NoStress {Stress,4;NoStress,13;} (17/4)
+RESP_Mod > 17.5: Stress {Stress,16;NoStress,7;} (23/7)
+
+Tree 4: 
+RESP_Med <= 17.5: NoStress {Stress,5;NoStress,13;} (18/5)
+RESP_Med > 17.5: Stress {Stress,15;NoStress,7;} (22/7)
+
+Tree 5: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.27  
+Root mean squared error                  0.4359
+Relative absolute error                 54      %
+Root relative squared error             87.178  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.818     0.776     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.818     0.789     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.818     0.782     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          30               75      %
+Incorrectly Classified Instances        10               25      %
+Kappa statistic                          0.5   
+Mean absolute error                      0.2786
+Root mean squared error                  0.4475
+Relative absolute error                 55.7127 %
+Root relative squared error             89.5068 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.250    0.750      0.750    0.750      0.500    0.789     0.720     Stress
+                 0.750    0.250    0.750      0.750    0.750      0.500    0.789     0.783     NoStress
+Weighted Avg.    0.750    0.250    0.750      0.750    0.750      0.500    0.789     0.751     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+Options: -N 10 -L 18 
+
+Tree 1: 
+RESP_Mean <= 17.5: NoStress {Stress,5;NoStress,16;} (21/5)
+RESP_Mean > 17.5: Stress {Stress,15;NoStress,4;} (19/4)
+
+Tree 2: 
+RESP_Min <= 14.5: NoStress {Stress,6;NoStress,16;} (22/6)
+RESP_Min > 14.5: Stress {Stress,14;NoStress,4;} (18/4)
+
+Tree 3: 
+RESP_Med <= 17.5: NoStress {Stress,5;NoStress,13;} (18/5)
+RESP_Med > 17.5: Stress {Stress,15;NoStress,7;} (22/7)
+
+Tree 4: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.2684
+Root mean squared error                  0.4555
+Relative absolute error                 53.6794 %
+Root relative squared error             91.0961 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.200    0.789      0.750    0.769      0.551    0.790     0.715     Stress
+                 0.800    0.250    0.762      0.800    0.780      0.551    0.790     0.765     NoStress
+Weighted Avg.    0.775    0.225    0.776      0.775    0.775      0.551    0.790     0.740     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.3885
+Root mean squared error                  0.5543
+Relative absolute error                 77.6923 %
+Root relative squared error            110.86   %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.550    0.577      0.750    0.652      0.210    0.641     0.592     Stress
+                 0.450    0.250    0.643      0.450    0.529      0.210    0.641     0.610     NoStress
+Weighted Avg.    0.600    0.400    0.610      0.600    0.591      0.210    0.641     0.601     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+ 11  9 |  b = NoStress
+
+
+
+Options: -N 10 -L 20 
+
+Tree 1: 
+RESP_SD <= 1.5: Stress {Stress,14;NoStress,6;} (20/6)
+RESP_SD > 1.5: NoStress {Stress,6;NoStress,14;} (20/6)
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          28               70      %
+Incorrectly Classified Instances        12               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3   
+Root mean squared error                  0.5477
+Relative absolute error                 60      %
+Root relative squared error            109.5445 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.300    0.700      0.700    0.700      0.400    0.700     0.640     Stress
+                 0.700    0.300    0.700      0.700    0.700      0.400    0.700     0.640     NoStress
+Weighted Avg.    0.700    0.300    0.700      0.700    0.700      0.400    0.700     0.640     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+

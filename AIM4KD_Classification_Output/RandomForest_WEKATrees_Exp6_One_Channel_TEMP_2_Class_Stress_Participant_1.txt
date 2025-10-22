@@ -1,0 +1,2184 @@
+
+Options: -print -I 10 -M 2.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 2.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Min < -2.5
+|   |   |   |   |   TEMP_Max < 1.5 : Stress (2/1)
+|   |   |   |   |   TEMP_Max >= 1.5 : NoStress (3/1)
+|   |   |   |   TEMP_Min >= -2.5 : Stress (10/5)
+|   |   |   TEMP_Mod >= 0.5
+|   |   |   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   |   |   TEMP_Max >= 1.5 : NoStress (8/3)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5 : Stress (3/1)
+|   |   TEMP_Mod >= -0.5 : Stress (5/0)
+|   TEMP_Mod >= 0.5 : Stress (2/1)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5
+|   |   TEMP_Min < -1.5 : Stress (4/0)
+|   |   TEMP_Min >= -1.5
+|   |   |   TEMP_Mod < -0.5 : NoStress (3/1)
+|   |   |   TEMP_Mod >= -0.5 : Stress (2/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -2.5 : NoStress (2/0)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < -0.5
+|   |   |   |   TEMP_Min < -1.5 : Stress (8/2)
+|   |   |   |   TEMP_Min >= -1.5 : Stress (1/0)
+|   |   |   TEMP_Mod >= -0.5 : NoStress (11/4)
+TEMP_Mod >= 0.5
+|   TEMP_Max < 1.5
+|   |   TEMP_Min < -1.5 : NoStress (3/0)
+|   |   TEMP_Min >= -1.5 : NoStress (3/1)
+|   TEMP_Max >= 1.5 : Stress (3/1)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < 0.5 : Stress (3/1)
+|   |   TEMP_Mod >= 0.5 : NoStress (1/0)
+|   TEMP_Min >= -1.5 : Stress (5/0)
+TEMP_Max >= 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -1.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Min < -2.5
+|   |   |   |   |   TEMP_Mod < -0.5 : NoStress (2/0)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (5/2)
+|   |   |   |   TEMP_Min >= -2.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (4/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (8/3)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (9/2)
+|   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < -0.5
+|   |   |   |   |   TEMP_Min < -2.5 : NoStress (1/0)
+|   |   |   |   |   TEMP_Min >= -2.5 : Stress (7/2)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   |   TEMP_Min >= -2.5 : Stress (10/3)
+|   |   TEMP_Min >= -1.5 : Stress (2/0)
+TEMP_Mod >= 0.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < 1.5
+|   |   |   TEMP_Max < 1.5 : NoStress (4/0)
+|   |   |   TEMP_Max >= 1.5 : NoStress (3/1)
+|   |   TEMP_Mod >= 1.5 : NoStress (1/0)
+|   TEMP_Min >= -1.5 : Stress (3/0)
+
+Size of the tree : 21
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (3/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   TEMP_Min >= -2.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (5/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (13/6)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5
+|   TEMP_Mod < 0.5 : Stress (7/0)
+|   TEMP_Mod >= 0.5 : NoStress (1/0)
+
+Size of the tree : 15
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (5/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (1/0)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < -0.5 : NoStress (2/0)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Mod < 1.5
+|   |   |   |   |   |   TEMP_Mod < 0.5 : NoStress (10/3)
+|   |   |   |   |   |   TEMP_Mod >= 0.5 : NoStress (4/1)
+|   |   |   |   |   TEMP_Mod >= 1.5 : NoStress (2/0)
+|   TEMP_Min >= -1.5
+|   |   TEMP_Max < 2.5
+|   |   |   TEMP_Mod < -0.5
+|   |   |   |   TEMP_Max < 1.5 : Stress (6/2)
+|   |   |   |   TEMP_Max >= 1.5 : NoStress (1/0)
+|   |   |   TEMP_Mod >= -0.5 : Stress (4/0)
+|   |   TEMP_Max >= 2.5 : Stress (2/0)
+
+Size of the tree : 21
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 2.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Max < 1.5 : NoStress (7/3)
+|   |   |   |   TEMP_Max >= 1.5
+|   |   |   |   |   TEMP_Min < -1.5 : NoStress (3/1)
+|   |   |   |   |   TEMP_Min >= -1.5 : Stress (2/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Min < -1.5
+|   |   |   |   TEMP_Max < 1.5 : Stress (1/0)
+|   |   |   |   TEMP_Max >= 1.5 : Stress (6/3)
+|   |   |   TEMP_Min >= -1.5 : Stress (5/0)
+|   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Max < 1.5
+|   |   |   TEMP_Min < -1.5 : NoStress (2/0)
+|   |   |   TEMP_Min >= -1.5 : NoStress (4/1)
+|   |   TEMP_Max >= 1.5 : NoStress (7/2)
+|   TEMP_Mod >= 1.5 : NoStress (1/0)
+
+Size of the tree : 23
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Min < -2.5 : NoStress (3/0)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Min < -1.5 : Stress (3/1)
+|   |   |   |   TEMP_Min >= -1.5
+|   |   |   |   |   TEMP_Max < 1.5 : Stress (3/1)
+|   |   |   |   |   TEMP_Max >= 1.5 : NoStress (1/0)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Max < 1.5 : Stress (5/0)
+|   |   |   TEMP_Max >= 1.5
+|   |   |   |   TEMP_Min < -1.5
+|   |   |   |   |   TEMP_Min < -2.5 : Stress (4/1)
+|   |   |   |   |   TEMP_Min >= -2.5 : NoStress (5/2)
+|   |   |   |   TEMP_Min >= -1.5 : Stress (1/0)
+|   TEMP_Mod >= 0.5
+|   |   TEMP_Mod < 1.5
+|   |   |   TEMP_Min < -1.5 : NoStress (5/0)
+|   |   |   TEMP_Min >= -1.5 : Stress (3/1)
+|   |   TEMP_Mod >= 1.5
+|   |   |   TEMP_Min < -1.5 : NoStress (2/0)
+|   |   |   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 25
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5
+|   |   TEMP_Min < -2 : Stress (3/1)
+|   |   TEMP_Min >= -2
+|   |   |   TEMP_Mod < -0.5 : NoStress (7/3)
+|   |   |   TEMP_Mod >= -0.5 : Stress (1/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (2/1)
+|   |   |   |   TEMP_Mod >= -0.5 : Stress (6/1)
+|   |   TEMP_Min >= -1.5 : Stress (5/0)
+TEMP_Mod >= 0.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Max < 1.5 : NoStress (4/0)
+|   |   TEMP_Max >= 1.5 : NoStress (8/1)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Min < -2.5
+|   |   |   TEMP_Mod < -0.5 : NoStress (1/0)
+|   |   |   TEMP_Mod >= -0.5
+|   |   |   |   TEMP_Max < 1.5 : NoStress (2/0)
+|   |   |   |   TEMP_Max >= 1.5 : Stress (2/0)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Max < 1.5 : Stress (1/0)
+|   |   |   TEMP_Max >= 1.5
+|   |   |   |   TEMP_Mod < 0.5 : Stress (16/8)
+|   |   |   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 15
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          28               70      %
+Incorrectly Classified Instances        12               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3782
+Root mean squared error                  0.4252
+Relative absolute error                 75.6309 %
+Root relative squared error             85.0318 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.250    0.722      0.650    0.684      0.402    0.794     0.789     Stress
+                 0.750    0.350    0.682      0.750    0.714      0.402    0.794     0.782     NoStress
+Weighted Avg.    0.700    0.300    0.702      0.700    0.699      0.402    0.794     0.785     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+  5 15 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5483
+Root mean squared error                  0.6046
+Relative absolute error                109.6541 %
+Root relative squared error            120.9233 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.400    0.500      0.400    0.444      0.000    0.393     0.448     Stress
+                 0.600    0.600    0.500      0.600    0.545      0.000    0.393     0.464     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.495      0.000    0.393     0.456     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 4.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 4.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   |   |   TEMP_Min >= -2.5 : Stress (10/5)
+|   |   |   TEMP_Mod >= 0.5
+|   |   |   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   |   |   TEMP_Max >= 1.5 : NoStress (8/3)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5
+|   TEMP_Max < 1.5 : Stress (6/2)
+|   TEMP_Max >= 1.5 : Stress (4/0)
+
+Size of the tree : 15
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5
+|   |   TEMP_Min < -1.5 : Stress (4/0)
+|   |   TEMP_Min >= -1.5 : Stress (5/2)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Min < -2.5 : NoStress (2/0)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Min < -1.5 : Stress (8/2)
+|   |   |   |   TEMP_Min >= -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -0.5 : NoStress (11/4)
+TEMP_Mod >= 0.5
+|   TEMP_Max < 1.5 : NoStress (6/1)
+|   TEMP_Max >= 1.5 : Stress (3/1)
+
+Size of the tree : 15
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5
+|   TEMP_Min < -1.5 : Stress (4/2)
+|   TEMP_Min >= -1.5 : Stress (5/0)
+TEMP_Max >= 1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Min < -2.5 : NoStress (7/2)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < 0.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (4/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (8/3)
+|   |   |   |   TEMP_Mod >= 0.5 : NoStress (9/2)
+|   TEMP_Mod >= 1.5 : Stress (2/0)
+
+Size of the tree : 15
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < -0.5
+|   |   |   |   |   TEMP_Min < -2.5 : NoStress (1/0)
+|   |   |   |   |   TEMP_Min >= -2.5 : Stress (7/2)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   |   TEMP_Min >= -2.5 : Stress (10/3)
+|   |   TEMP_Min >= -1.5 : Stress (2/0)
+TEMP_Mod >= 0.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (4/0)
+|   |   TEMP_Max >= 1.5 : NoStress (4/1)
+|   TEMP_Min >= -1.5 : Stress (3/0)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (3/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   TEMP_Min >= -2.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (5/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (13/6)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5
+|   TEMP_Mod < 0.5 : Stress (7/0)
+|   TEMP_Mod >= 0.5 : NoStress (1/0)
+
+Size of the tree : 15
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (5/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (1/0)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < -0.5 : NoStress (2/0)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Mod < 1.5
+|   |   |   |   |   |   TEMP_Mod < 0.5 : NoStress (10/3)
+|   |   |   |   |   |   TEMP_Mod >= 0.5 : NoStress (4/1)
+|   |   |   |   |   TEMP_Mod >= 1.5 : NoStress (2/0)
+|   TEMP_Min >= -1.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Max < 2.5 : Stress (7/3)
+|   |   |   TEMP_Max >= 2.5 : Stress (2/0)
+|   |   TEMP_Mod >= -0.5 : Stress (4/0)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 2.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Max < 1.5 : NoStress (7/3)
+|   |   |   |   TEMP_Max >= 1.5 : NoStress (5/2)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Min < -1.5 : Stress (7/3)
+|   |   |   TEMP_Min >= -1.5 : Stress (5/0)
+|   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < 1.5
+|   |   |   TEMP_Max < 1.5 : NoStress (2/0)
+|   |   |   TEMP_Max >= 1.5 : NoStress (7/2)
+|   |   TEMP_Mod >= 1.5 : NoStress (1/0)
+|   TEMP_Min >= -1.5 : NoStress (4/1)
+
+Size of the tree : 19
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Min < -2.5 : NoStress (3/0)
+|   |   |   TEMP_Min >= -2.5 : Stress (7/3)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Min < -1.5
+|   |   |   |   TEMP_Max < 1.5 : Stress (3/0)
+|   |   |   |   TEMP_Max >= 1.5
+|   |   |   |   |   TEMP_Min < -2.5 : Stress (4/1)
+|   |   |   |   |   TEMP_Min >= -2.5 : NoStress (5/2)
+|   |   |   TEMP_Min >= -1.5 : Stress (3/0)
+|   TEMP_Mod >= 0.5
+|   |   TEMP_Min < -1.5 : NoStress (7/0)
+|   |   TEMP_Min >= -1.5 : Stress (5/1)
+
+Size of the tree : 17
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5
+|   |   TEMP_Min < -2 : Stress (3/1)
+|   |   TEMP_Min >= -2
+|   |   |   TEMP_Mod < -0.5 : NoStress (7/3)
+|   |   |   TEMP_Mod >= -0.5 : Stress (1/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Max < 2.5
+|   |   |   TEMP_Min < -1.5
+|   |   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   |   TEMP_Mod >= -1.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (2/1)
+|   |   |   |   |   TEMP_Mod >= -0.5 : Stress (6/1)
+|   |   |   TEMP_Min >= -1.5 : Stress (4/0)
+|   |   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Max < 1.5 : NoStress (4/0)
+|   |   TEMP_Max >= 1.5 : NoStress (8/1)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+
+Size of the tree : 21
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (6/3)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Max < 1.5 : Stress (1/0)
+|   |   |   |   |   TEMP_Max >= 1.5 : Stress (10/5)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 13
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.3844
+Root mean squared error                  0.4305
+Relative absolute error                 76.8722 %
+Root relative squared error             86.1002 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.500    0.630      0.850    0.723      0.374    0.785     0.782     Stress
+                 0.500    0.150    0.769      0.500    0.606      0.374    0.785     0.763     NoStress
+Weighted Avg.    0.675    0.325    0.699      0.675    0.665      0.374    0.785     0.772     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5302
+Root mean squared error                  0.5753
+Relative absolute error                106.0485 %
+Root relative squared error            115.0671 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.400    0.500      0.400    0.444      0.000    0.425     0.459     Stress
+                 0.600    0.600    0.500      0.600    0.545      0.000    0.425     0.476     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.495      0.000    0.425     0.467     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 6.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 6.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   |   |   TEMP_Min >= -2.5 : Stress (10/5)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (9/3)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (9/2)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -2.5 : NoStress (2/0)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < -0.5 : Stress (9/2)
+|   |   |   TEMP_Mod >= -0.5 : NoStress (11/4)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (7/2)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < 0.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (4/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (8/3)
+|   |   |   |   TEMP_Mod >= 0.5 : NoStress (9/2)
+|   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (8/3)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   |   TEMP_Min >= -2.5 : Stress (10/3)
+|   |   TEMP_Min >= -1.5 : Stress (2/0)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (3/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   TEMP_Min >= -2.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (5/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (13/6)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (5/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (1/0)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < -0.5 : NoStress (2/0)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Mod < 1.5
+|   |   |   |   |   |   TEMP_Mod < 0.5 : NoStress (10/3)
+|   |   |   |   |   |   TEMP_Mod >= 0.5 : NoStress (4/1)
+|   |   |   |   |   TEMP_Mod >= 1.5 : NoStress (2/0)
+|   TEMP_Min >= -1.5
+|   |   TEMP_Mod < -0.5 : Stress (9/3)
+|   |   TEMP_Mod >= -0.5 : Stress (4/0)
+
+Size of the tree : 17
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 2.5
+|   |   TEMP_Mod < -0.5
+|   |   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Max < 1.5 : NoStress (7/3)
+|   |   |   |   TEMP_Max >= 1.5 : NoStress (5/2)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Min < -1.5 : Stress (7/3)
+|   |   |   TEMP_Min >= -1.5 : Stress (5/0)
+|   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5
+|   TEMP_Min < -1.5 : NoStress (10/2)
+|   TEMP_Min >= -1.5 : NoStress (4/1)
+
+Size of the tree : 15
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5 : NoStress (10/4)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Max < 1.5 : Stress (5/0)
+|   |   |   TEMP_Max >= 1.5 : Stress (10/4)
+|   TEMP_Mod >= 0.5
+|   |   TEMP_Min < -1.5 : NoStress (7/0)
+|   |   TEMP_Min >= -1.5 : Stress (5/1)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (11/5)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5 : Stress (10/2)
+|   |   TEMP_Min >= -1.5 : Stress (5/0)
+TEMP_Mod >= 0.5
+|   TEMP_Max < 1.5 : NoStress (4/0)
+|   TEMP_Max >= 1.5 : NoStress (10/1)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (6/3)
+|   |   |   |   TEMP_Mod >= -0.5 : Stress (11/5)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 11
+
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.3965
+Root mean squared error                  0.4379
+Relative absolute error                 79.3045 %
+Root relative squared error             87.5754 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.500    0.630      0.850    0.723      0.374    0.775     0.775     Stress
+                 0.500    0.150    0.769      0.500    0.606      0.374    0.775     0.735     NoStress
+Weighted Avg.    0.675    0.325    0.699      0.675    0.665      0.374    0.775     0.755     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          18               45      %
+Incorrectly Classified Instances        22               55      %
+Kappa statistic                         -0.1   
+Mean absolute error                      0.5147
+Root mean squared error                  0.5615
+Relative absolute error                102.9414 %
+Root relative squared error            112.3072 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.500    0.444      0.400    0.421      -0.101   0.465     0.483     Stress
+                 0.500    0.600    0.455      0.500    0.476      -0.101   0.465     0.512     NoStress
+Weighted Avg.    0.450    0.550    0.449      0.450    0.449      -0.101   0.465     0.497     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 8.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 8.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Mod < 0.5 : NoStress (15/7)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (9/3)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (9/2)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -2.5 : NoStress (2/0)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < -0.5 : Stress (9/2)
+|   |   |   TEMP_Mod >= -0.5 : NoStress (11/4)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (7/2)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < 0.5 : NoStress (12/5)
+|   |   |   |   TEMP_Mod >= 0.5 : NoStress (9/2)
+|   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (8/3)
+|   |   |   |   TEMP_Mod >= -0.5 : Stress (12/3)
+|   |   TEMP_Min >= -1.5 : Stress (2/0)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (3/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   TEMP_Min >= -2.5
+|   |   |   |   |   TEMP_Mod < -0.5 : Stress (5/2)
+|   |   |   |   |   TEMP_Mod >= -0.5 : NoStress (13/6)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (5/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (1/0)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < -0.5 : NoStress (2/0)
+|   |   |   |   TEMP_Mod >= -0.5
+|   |   |   |   |   TEMP_Mod < 1.5 : NoStress (14/4)
+|   |   |   |   |   TEMP_Mod >= 1.5 : NoStress (2/0)
+|   TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 13
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 2.5
+|   |   TEMP_Mod < -0.5 : NoStress (13/6)
+|   |   TEMP_Mod >= -0.5 : Stress (12/3)
+|   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5 : NoStress (10/4)
+|   |   TEMP_Mod >= -0.5 : Stress (15/4)
+|   TEMP_Mod >= 0.5 : NoStress (12/4)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (11/5)
+|   TEMP_Max >= 1.5 : Stress (15/2)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < 0.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (6/3)
+|   |   |   |   TEMP_Mod >= -0.5 : Stress (11/5)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 11
+
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4109
+Root mean squared error                  0.4454
+Relative absolute error                 82.1702 %
+Root relative squared error             89.0851 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.500    0.630      0.850    0.723      0.374    0.758     0.751     Stress
+                 0.500    0.150    0.769      0.500    0.606      0.374    0.758     0.729     NoStress
+Weighted Avg.    0.675    0.325    0.699      0.675    0.665      0.374    0.758     0.740     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          19               47.5    %
+Incorrectly Classified Instances        21               52.5    %
+Kappa statistic                         -0.05  
+Mean absolute error                      0.5127
+Root mean squared error                  0.5469
+Relative absolute error                102.5498 %
+Root relative squared error            109.3781 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.450    0.471      0.400    0.432      -0.051   0.463     0.497     Stress
+                 0.550    0.600    0.478      0.550    0.512      -0.051   0.463     0.486     NoStress
+Weighted Avg.    0.475    0.525    0.474      0.475    0.472      -0.051   0.463     0.491     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+  9 11 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 10.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 10.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Mod < 0.5 : NoStress (15/7)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (9/3)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (9/2)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -2.5 : NoStress (2/0)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < -0.5 : Stress (9/2)
+|   |   |   TEMP_Mod >= -0.5 : NoStress (11/4)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (7/2)
+|   |   |   TEMP_Min >= -2.5
+|   |   |   |   TEMP_Mod < 0.5 : NoStress (12/5)
+|   |   |   |   TEMP_Mod >= 0.5 : NoStress (9/2)
+|   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (2/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Mod < -0.5 : Stress (8/3)
+|   |   |   |   TEMP_Mod >= -0.5 : Stress (12/3)
+|   |   TEMP_Min >= -1.5 : Stress (2/0)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   TEMP_Max >= 1.5
+|   |   |   TEMP_Mod < -1.5 : Stress (3/0)
+|   |   |   TEMP_Mod >= -1.5
+|   |   |   |   TEMP_Min < -2.5 : Stress (2/0)
+|   |   |   |   TEMP_Min >= -2.5 : Stress (18/9)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 11
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (5/0)
+|   |   TEMP_Max >= 1.5 : NoStress (19/4)
+|   TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 2.5
+|   |   TEMP_Mod < -0.5 : NoStress (13/6)
+|   |   TEMP_Mod >= -0.5 : Stress (12/3)
+|   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5 : NoStress (10/4)
+|   |   TEMP_Mod >= -0.5 : Stress (15/4)
+|   TEMP_Mod >= 0.5 : NoStress (12/4)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (11/5)
+|   TEMP_Max >= 1.5 : Stress (15/2)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   TEMP_Min >= -2.5
+|   |   |   TEMP_Mod < 0.5 : Stress (17/8)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (3/0)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 9
+
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4112
+Root mean squared error                  0.446 
+Relative absolute error                 82.2349 %
+Root relative squared error             89.1998 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.600    0.613      0.950    0.745      0.419    0.758     0.751     Stress
+                 0.400    0.050    0.889      0.400    0.552      0.419    0.758     0.729     NoStress
+Weighted Avg.    0.675    0.325    0.751      0.675    0.648      0.419    0.758     0.740     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = Stress
+ 12  8 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.506 
+Root mean squared error                  0.5349
+Relative absolute error                101.1942 %
+Root relative squared error            106.9871 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.450    0.500      0.450    0.474      0.000    0.480     0.503     Stress
+                 0.550    0.550    0.500      0.550    0.524      0.000    0.480     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.499      0.000    0.480     0.501     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 11 |  a = Stress
+  9 11 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 12.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 12.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5
+|   |   |   TEMP_Mod < 0.5 : NoStress (15/7)
+|   |   |   TEMP_Mod >= 0.5 : NoStress (9/3)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (9/2)
+|   TEMP_Max >= 1.5 : Stress (22/11)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (7/2)
+|   |   |   TEMP_Min >= -2.5 : NoStress (21/7)
+|   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5
+|   |   TEMP_Min < -1.5 : Stress (22/6)
+|   |   TEMP_Min >= -1.5 : Stress (2/0)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Max < 1.5 : NoStress (1/0)
+|   |   TEMP_Max >= 1.5 : Stress (23/9)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Max < 1.5 : NoStress (5/0)
+|   |   TEMP_Max >= 1.5 : NoStress (19/4)
+|   TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 2.5
+|   |   TEMP_Mod < -0.5 : NoStress (13/6)
+|   |   TEMP_Mod >= -0.5 : Stress (12/3)
+|   TEMP_Max >= 2.5 : Stress (1/0)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5
+|   |   TEMP_Mod < -0.5 : NoStress (10/4)
+|   |   TEMP_Mod >= -0.5 : Stress (15/4)
+|   TEMP_Mod >= 0.5 : NoStress (12/4)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (11/5)
+|   TEMP_Max >= 1.5 : Stress (15/2)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Min < -2.5 : NoStress (5/2)
+|   |   TEMP_Min >= -2.5 : NoStress (20/9)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 7
+
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4214
+Root mean squared error                  0.4499
+Relative absolute error                 84.2703 %
+Root relative squared error             89.9724 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.500    0.630      0.850    0.723      0.374    0.750     0.743     Stress
+                 0.500    0.150    0.769      0.500    0.606      0.374    0.750     0.724     NoStress
+Weighted Avg.    0.675    0.325    0.699      0.675    0.665      0.374    0.750     0.734     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          17               42.5    %
+Incorrectly Classified Instances        23               57.5    %
+Kappa statistic                         -0.15  
+Mean absolute error                      0.5082
+Root mean squared error                  0.5306
+Relative absolute error                101.6495 %
+Root relative squared error            106.1253 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.600    0.429      0.450    0.439      -0.150   0.468     0.510     Stress
+                 0.400    0.550    0.421      0.400    0.410      -0.150   0.468     0.493     NoStress
+Weighted Avg.    0.425    0.575    0.425      0.425    0.425      -0.150   0.468     0.502     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 11 |  a = Stress
+ 12  8 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 14.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 14.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 1.5
+|   |   TEMP_Mod < -0.5 : NoStress (4/1)
+|   |   TEMP_Mod >= -0.5 : NoStress (24/10)
+|   TEMP_Mod >= 1.5 : NoStress (2/0)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 7
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (9/2)
+|   TEMP_Max >= 1.5 : Stress (22/11)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5
+|   TEMP_Min < -1.5
+|   |   TEMP_Mod < -1.5 : Stress (1/0)
+|   |   TEMP_Mod >= -1.5
+|   |   |   TEMP_Min < -2.5 : NoStress (7/2)
+|   |   |   TEMP_Min >= -2.5 : NoStress (21/7)
+|   TEMP_Min >= -1.5 : Stress (2/0)
+
+Size of the tree : 9
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5
+|   TEMP_Max < 1.5 : Stress (5/0)
+|   TEMP_Max >= 1.5 : Stress (24/6)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5 : Stress (24/10)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5 : NoStress (24/4)
+|   TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/10)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5 : Stress (25/10)
+|   TEMP_Mod >= 0.5 : NoStress (12/4)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/7)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5 : NoStress (25/11)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 5
+
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4239
+Root mean squared error                  0.4508
+Relative absolute error                 84.7876 %
+Root relative squared error             90.1552 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.500    0.630      0.850    0.723      0.374    0.759     0.708     Stress
+                 0.500    0.150    0.769      0.500    0.606      0.374    0.759     0.728     NoStress
+Weighted Avg.    0.675    0.325    0.699      0.675    0.665      0.374    0.759     0.718     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          18               45      %
+Incorrectly Classified Instances        22               55      %
+Kappa statistic                         -0.1   
+Mean absolute error                      0.4971
+Root mean squared error                  0.5143
+Relative absolute error                 99.4268 %
+Root relative squared error            102.869  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.500    0.444      0.400    0.421      -0.101   0.509     0.534     Stress
+                 0.500    0.600    0.455      0.500    0.476      -0.101   0.509     0.511     NoStress
+Weighted Avg.    0.450    0.550    0.449      0.450    0.449      -0.101   0.509     0.522     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 16.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 16.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (30/11)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (31/13)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5 : NoStress (31/12)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (29/6)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5
+|   TEMP_Mod < 0.5 : Stress (24/10)
+|   TEMP_Mod >= 0.5 : NoStress (8/0)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5 : NoStress (24/4)
+|   TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/10)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5 : Stress (25/10)
+|   TEMP_Mod >= 0.5 : NoStress (12/4)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/7)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5 : NoStress (25/11)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 5
+
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4352
+Root mean squared error                  0.4563
+Relative absolute error                 87.0456 %
+Root relative squared error             91.253  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.650    0.594      0.950    0.731      0.375    0.729     0.680     Stress
+                 0.350    0.050    0.875      0.350    0.500      0.375    0.729     0.690     NoStress
+Weighted Avg.    0.650    0.350    0.734      0.650    0.615      0.375    0.729     0.685     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          18               45      %
+Incorrectly Classified Instances        22               55      %
+Kappa statistic                         -0.1   
+Mean absolute error                      0.4981
+Root mean squared error                  0.5127
+Relative absolute error                 99.6285 %
+Root relative squared error            102.5426 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.500    0.444      0.400    0.421      -0.101   0.514     0.533     Stress
+                 0.500    0.600    0.455      0.500    0.476      -0.101   0.514     0.521     NoStress
+Weighted Avg.    0.450    0.550    0.449      0.450    0.449      -0.101   0.514     0.527     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 18.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 18.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (30/11)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (31/13)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5 : NoStress (31/12)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (29/6)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (32/14)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Min < -1.5 : NoStress (24/4)
+|   TEMP_Min >= -1.5 : Stress (13/3)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/10)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5
+|   TEMP_Mod < 0.5 : Stress (25/10)
+|   TEMP_Mod >= 0.5 : NoStress (12/4)
+
+Size of the tree : 5
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/7)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5
+|   TEMP_Min < -1.5 : NoStress (25/11)
+|   TEMP_Min >= -1.5 : Stress (11/0)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 5
+
+
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4418
+Root mean squared error                  0.4592
+Relative absolute error                 88.3581 %
+Root relative squared error             91.847  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.650    0.594      0.950    0.731      0.375    0.749     0.689     Stress
+                 0.350    0.050    0.875      0.350    0.500      0.375    0.749     0.701     NoStress
+Weighted Avg.    0.650    0.350    0.734      0.650    0.615      0.375    0.749     0.695     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.4989
+Root mean squared error                  0.5086
+Relative absolute error                 99.7833 %
+Root relative squared error            101.7122 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.450    0.500      0.450    0.474      0.000    0.525     0.539     Stress
+                 0.550    0.550    0.500      0.550    0.524      0.000    0.525     0.522     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.499      0.000    0.525     0.530     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 11 |  a = Stress
+  9 11 |  b = NoStress
+
+
+
+Options: -print -I 10 -M 20.0 
+
+RandomForest
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 20.0 -V 0.001 -S 1 -do-not-check-capabilitiesAll the base classifiers: 
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (30/11)
+TEMP_Min >= -1.5 : Stress (10/2)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (31/13)
+TEMP_Mod >= 0.5 : NoStress (9/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Max < 1.5 : Stress (9/2)
+TEMP_Max >= 1.5 : NoStress (31/12)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (29/6)
+TEMP_Mod >= 0.5 : NoStress (11/4)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Min < -1.5 : NoStress (32/14)
+TEMP_Min >= -1.5 : Stress (8/1)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5 : NoStress (37/14)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/10)
+TEMP_Mod >= 0.5 : NoStress (14/3)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < -1.5 : Stress (3/0)
+TEMP_Mod >= -1.5 : Stress (37/18)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 0.5 : Stress (26/7)
+TEMP_Mod >= 0.5 : NoStress (14/1)
+
+Size of the tree : 3
+
+
+RandomTree
+==========
+
+TEMP_Mod < 1.5 : Stress (36/14)
+TEMP_Mod >= 1.5 : Stress (4/0)
+
+Size of the tree : 3
+
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4615
+Root mean squared error                  0.47  
+Relative absolute error                 92.2951 %
+Root relative squared error             94.009  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.600    0.586      0.850    0.694      0.280    0.726     0.678     Stress
+                 0.400    0.150    0.727      0.400    0.516      0.280    0.726     0.691     NoStress
+Weighted Avg.    0.625    0.375    0.657      0.625    0.605      0.280    0.726     0.685     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 12  8 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5003
+Relative absolute error                100      %
+Root relative squared error            100.0626 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.600    0.500      0.600    0.545      0.000    0.500     0.500     Stress
+                 0.400    0.400    0.500      0.400    0.444      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.495      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+ 12  8 |  b = NoStress
+
+

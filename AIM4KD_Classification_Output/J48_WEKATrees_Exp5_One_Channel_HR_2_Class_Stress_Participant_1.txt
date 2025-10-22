@@ -1,0 +1,720 @@
+
+Options: -M 2 
+
+J48 pruned tree
+------------------
+
+HR_Mean <= 58: Stress (5.0)
+HR_Mean > 58: NoStress (35.0/15.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4286
+Root mean squared error                  0.4629
+Relative absolute error                 85.7143 %
+Root relative squared error             92.582  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.250    0.000    1.000      0.250    0.400      0.378    0.625     0.625     Stress
+                 1.000    0.750    0.571      1.000    0.727      0.378    0.625     0.571     NoStress
+Weighted Avg.    0.625    0.375    0.786      0.625    0.564      0.378    0.625     0.598     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  5 15 |  a = Stress
+  0 20 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          22               55      %
+Incorrectly Classified Instances        18               45      %
+Kappa statistic                          0.1   
+Mean absolute error                      0.4814
+Root mean squared error                  0.5634
+Relative absolute error                 96.284  %
+Root relative squared error            112.6883 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.250    0.150    0.625      0.250    0.357      0.125    0.493     0.608     Stress
+                 0.850    0.750    0.531      0.850    0.654      0.125    0.493     0.498     NoStress
+Weighted Avg.    0.550    0.450    0.578      0.550    0.505      0.125    0.493     0.553     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  5 15 |  a = Stress
+  3 17 |  b = NoStress
+
+
+
+Options: -M 4 
+
+J48 pruned tree
+------------------
+
+HR_Mean <= 58: Stress (5.0)
+HR_Mean > 58: NoStress (35.0/15.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4286
+Root mean squared error                  0.4629
+Relative absolute error                 85.7143 %
+Root relative squared error             92.582  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.250    0.000    1.000      0.250    0.400      0.378    0.625     0.625     Stress
+                 1.000    0.750    0.571      1.000    0.727      0.378    0.625     0.571     NoStress
+Weighted Avg.    0.625    0.375    0.786      0.625    0.564      0.378    0.625     0.598     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  5 15 |  a = Stress
+  0 20 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          17               42.5    %
+Incorrectly Classified Instances        23               57.5    %
+Kappa statistic                         -0.15  
+Mean absolute error                      0.5155
+Root mean squared error                  0.6047
+Relative absolute error                103.0948 %
+Root relative squared error            120.9338 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.350    0.500    0.412      0.350    0.378      -0.152   0.453     0.601     Stress
+                 0.500    0.650    0.435      0.500    0.465      -0.152   0.453     0.469     NoStress
+Weighted Avg.    0.425    0.575    0.423      0.425    0.422      -0.152   0.453     0.535     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  7 13 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+Options: -M 6 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 62: Stress (32.0/13.0)
+HR_Med > 62: NoStress (8.0/1.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4297
+Root mean squared error                  0.4635
+Relative absolute error                 85.9375 %
+Root relative squared error             92.7025 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.650    0.594      0.950    0.731      0.375    0.650     0.589     Stress
+                 0.350    0.050    0.875      0.350    0.500      0.375    0.650     0.631     NoStress
+Weighted Avg.    0.650    0.350    0.734      0.650    0.615      0.375    0.650     0.610     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          19               47.5    %
+Incorrectly Classified Instances        21               52.5    %
+Kappa statistic                         -0.05  
+Mean absolute error                      0.5215
+Root mean squared error                  0.5789
+Relative absolute error                104.3011 %
+Root relative squared error            115.7879 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.700    0.481      0.650    0.553      -0.053   0.401     0.485     Stress
+                 0.300    0.350    0.462      0.300    0.364      -0.053   0.401     0.471     NoStress
+Weighted Avg.    0.475    0.525    0.472      0.475    0.458      -0.053   0.401     0.478     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+ 14  6 |  b = NoStress
+
+
+
+Options: -M 8 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 62: Stress (32.0/13.0)
+HR_Med > 62: NoStress (8.0/1.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4297
+Root mean squared error                  0.4635
+Relative absolute error                 85.9375 %
+Root relative squared error             92.7025 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.650    0.594      0.950    0.731      0.375    0.650     0.589     Stress
+                 0.350    0.050    0.875      0.350    0.500      0.375    0.650     0.631     NoStress
+Weighted Avg.    0.650    0.350    0.734      0.650    0.615      0.375    0.650     0.610     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          16               40      %
+Incorrectly Classified Instances        24               60      %
+Kappa statistic                         -0.2   
+Mean absolute error                      0.561 
+Root mean squared error                  0.5962
+Relative absolute error                112.2025 %
+Root relative squared error            119.2322 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.350    0.550    0.389      0.350    0.368      -0.201   0.335     0.413     Stress
+                 0.450    0.650    0.409      0.450    0.429      -0.201   0.335     0.419     NoStress
+Weighted Avg.    0.400    0.600    0.399      0.400    0.398      -0.201   0.335     0.416     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  7 13 |  a = Stress
+ 11  9 |  b = NoStress
+
+
+
+Options: -M 10 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 61: Stress (28.0/11.0)
+HR_Med > 61: NoStress (12.0/3.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4464
+Root mean squared error                  0.4725
+Relative absolute error                 89.2857 %
+Root relative squared error             94.4911 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.550    0.607      0.850    0.708      0.327    0.650     0.591     Stress
+                 0.450    0.150    0.750      0.450    0.563      0.327    0.650     0.613     NoStress
+Weighted Avg.    0.650    0.350    0.679      0.650    0.635      0.327    0.650     0.602     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 11  9 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          13               32.5    %
+Incorrectly Classified Instances        27               67.5    %
+Kappa statistic                         -0.35  
+Mean absolute error                      0.5976
+Root mean squared error                  0.6321
+Relative absolute error                119.5296 %
+Root relative squared error            126.4222 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.250    0.600    0.294      0.250    0.270      -0.354   0.245     0.386     Stress
+                 0.400    0.750    0.348      0.400    0.372      -0.354   0.245     0.381     NoStress
+Weighted Avg.    0.325    0.675    0.321      0.325    0.321      -0.354   0.245     0.384     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  5 15 |  a = Stress
+ 12  8 |  b = NoStress
+
+
+
+Options: -M 12 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 61: Stress (28.0/11.0)
+HR_Med > 61: NoStress (12.0/3.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          26               65      %
+Incorrectly Classified Instances        14               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.4464
+Root mean squared error                  0.4725
+Relative absolute error                 89.2857 %
+Root relative squared error             94.4911 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.550    0.607      0.850    0.708      0.327    0.650     0.591     Stress
+                 0.450    0.150    0.750      0.450    0.563      0.327    0.650     0.613     NoStress
+Weighted Avg.    0.650    0.350    0.679      0.650    0.635      0.327    0.650     0.602     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 11  9 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          17               42.5    %
+Incorrectly Classified Instances        23               57.5    %
+Kappa statistic                         -0.15  
+Mean absolute error                      0.5384
+Root mean squared error                  0.5539
+Relative absolute error                107.6797 %
+Root relative squared error            110.7781 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.650    0.435      0.500    0.465      -0.152   0.320     0.415     Stress
+                 0.350    0.500    0.412      0.350    0.378      -0.152   0.320     0.406     NoStress
+Weighted Avg.    0.425    0.575    0.423      0.425    0.422      -0.152   0.320     0.410     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 10 10 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+Options: -M 14 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 60: Stress (20.0/8.0)
+HR_Med > 60: NoStress (20.0/8.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.48  
+Root mean squared error                  0.4899
+Relative absolute error                 96      %
+Root relative squared error             97.9796 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     Stress
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     NoStress
+Weighted Avg.    0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          15               37.5    %
+Incorrectly Classified Instances        25               62.5    %
+Kappa statistic                         -0.25  
+Mean absolute error                      0.5478
+Root mean squared error                  0.5603
+Relative absolute error                109.5655 %
+Root relative squared error            112.0642 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.650    0.381      0.400    0.390      -0.250   0.255     0.385     Stress
+                 0.350    0.600    0.368      0.350    0.359      -0.250   0.255     0.380     NoStress
+Weighted Avg.    0.375    0.625    0.375      0.375    0.375      -0.250   0.255     0.382     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  8 12 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+Options: -M 16 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 60: Stress (20.0/8.0)
+HR_Med > 60: NoStress (20.0/8.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.48  
+Root mean squared error                  0.4899
+Relative absolute error                 96      %
+Root relative squared error             97.9796 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     Stress
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     NoStress
+Weighted Avg.    0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5126
+Root mean squared error                  0.5249
+Relative absolute error                102.5286 %
+Root relative squared error            104.9724 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.500    0.500      0.500    0.500      0.000    0.378     0.429     Stress
+                 0.500    0.500    0.500      0.500    0.500      0.000    0.378     0.434     NoStress
+Weighted Avg.    0.500    0.500    0.500      0.500    0.500      0.000    0.378     0.431     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 10 10 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+Options: -M 18 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 60: Stress (20.0/8.0)
+HR_Med > 60: NoStress (20.0/8.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.48  
+Root mean squared error                  0.4899
+Relative absolute error                 96      %
+Root relative squared error             97.9796 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     Stress
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     NoStress
+Weighted Avg.    0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          17               42.5    %
+Incorrectly Classified Instances        23               57.5    %
+Kappa statistic                         -0.15  
+Mean absolute error                      0.5222
+Root mean squared error                  0.5317
+Relative absolute error                104.4444 %
+Root relative squared error            106.3421 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.300    0.450    0.400      0.300    0.343      -0.155   0.360     0.444     Stress
+                 0.550    0.700    0.440      0.550    0.489      -0.155   0.360     0.439     NoStress
+Weighted Avg.    0.425    0.575    0.420      0.425    0.416      -0.155   0.360     0.442     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  6 14 |  a = Stress
+  9 11 |  b = NoStress
+
+
+
+Options: -M 20 
+
+J48 pruned tree
+------------------
+
+HR_Med <= 60: Stress (20.0/8.0)
+HR_Med > 60: NoStress (20.0/8.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.48  
+Root mean squared error                  0.4899
+Relative absolute error                 96      %
+Root relative squared error             97.9796 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     Stress
+                 0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     NoStress
+Weighted Avg.    0.600    0.400    0.600      0.600    0.600      0.200    0.600     0.560     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+

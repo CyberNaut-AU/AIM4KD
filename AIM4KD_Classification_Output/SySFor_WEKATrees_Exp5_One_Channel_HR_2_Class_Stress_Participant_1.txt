@@ -1,0 +1,1088 @@
+
+Options: -N 10 -L 2 
+
+Tree 1: 
+HR_Mean <= 58.5: Stress {Stress,5;NoStress,0;} (5/0)
+HR_Mean > 58.5: NoStress {Stress,15;NoStress,20;} (35/15)
+
+Tree 2: 
+HR_Med <= 64.5: Stress {Stress,20;NoStress,16;} (36/16)
+HR_Med > 64.5: NoStress {Stress,0;NoStress,4;} (4/0)
+
+Tree 3: 
+HRV_SDNN <= 46.5: NoStress {Stress,0;NoStress,3;} (3/0)
+HRV_SDNN > 46.5
+|   HR_Med <= 64
+|   |   HR_Mean <= 58: Stress (5.0)
+|   |   HR_Mean > 58
+|   |   |   HRV_rMSSD <= 74
+|   |   |   |   HR_Med <= 59
+|   |   |   |   |   HRV_rMSSD <= 72: NoStress (2.0)
+|   |   |   |   |   HRV_rMSSD > 72: Stress (2.0)
+|   |   |   |   HR_Med > 59: Stress (12.0/2.0)
+|   |   |   HRV_rMSSD > 74
+|   |   |   |   HR_Min <= 57: NoStress (10.0/1.0)
+|   |   |   |   HR_Min > 57: Stress (2.0)
+|   HR_Med > 64: NoStress (4.0)
+
+Tree 4: 
+HRV_rMSSD <= 91.5
+|   HR_Mean <= 62
+|   |   HRV_rMSSD <= 84
+|   |   |   HR_SD <= 4: Stress (23.0/6.0)
+|   |   |   HR_SD > 4: NoStress (2.0)
+|   |   HRV_rMSSD > 84: NoStress (5.0)
+|   HR_Mean > 62: NoStress (7.0)
+HRV_rMSSD > 91.5: Stress {Stress,3;NoStress,0;} (3/0)
+
+Tree 5: 
+HR_Max <= 61.5: Stress {Stress,2;NoStress,0;} (2/0)
+HR_Max > 61.5
+|   HR_Mean <= 64: Stress (34.0/16.0)
+|   HR_Mean > 64: NoStress (4.0)
+
+Tree 6: 
+HR_Min <= 60.5
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58: NoStress (33.0/15.0)
+HR_Min > 60.5: NoStress {Stress,0;NoStress,2;} (2/0)
+
+Tree 7: 
+HR_Med <= 57.5: Stress {Stress,2;NoStress,0;} (2/0)
+HR_Med > 57.5
+|   HR_Mean <= 64: Stress (34.0/16.0)
+|   HR_Mean > 64: NoStress (4.0)
+
+Tree 8: 
+HR_Mod <= 60.5
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58: NoStress (33.0/15.0)
+HR_Mod > 60.5: NoStress {Stress,0;NoStress,2;} (2/0)
+
+Tree 9: 
+HR_SD <= 3.5
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58
+|   |   HRV_rMSSD <= 78
+|   |   |   HR_Mean <= 62: Stress (18.0/5.0)
+|   |   |   HR_Mean > 62: NoStress (2.0)
+|   |   HRV_rMSSD > 78: NoStress (9.0/1.0)
+HR_SD > 3.5: NoStress {Stress,1;NoStress,5;} (6/1)
+
+Tree 10: 
+HR_Min <= 54.5
+|   HR_Max <= 64: Stress (5.0)
+|   HR_Max > 64
+|   |   HR_Med <= 59: NoStress (3.0)
+|   |   HR_Med > 59: Stress (3.0)
+HR_Min > 54.5: NoStress {Stress,12;NoStress,17;} (29/12)
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          38               95      %
+Incorrectly Classified Instances         2                5      %
+Kappa statistic                          0.9   
+Mean absolute error                      0.3004
+Root mean squared error                  0.3474
+Relative absolute error                 60.0795 %
+Root relative squared error             69.4824 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.100    0.909      1.000    0.952      0.905    0.965     0.941     Stress
+                 0.900    0.000    1.000      0.900    0.947      0.905    0.965     0.963     NoStress
+Weighted Avg.    0.950    0.050    0.955      0.950    0.950      0.905    0.965     0.952     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+  2 18 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          19               47.5    %
+Incorrectly Classified Instances        21               52.5    %
+Kappa statistic                         -0.05  
+Mean absolute error                      0.4878
+Root mean squared error                  0.5922
+Relative absolute error                 97.5683 %
+Root relative squared error            118.4354 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.350    0.400    0.467      0.350    0.400      -0.052   0.538     0.506     Stress
+                 0.600    0.650    0.480      0.600    0.533      -0.052   0.538     0.582     NoStress
+Weighted Avg.    0.475    0.525    0.473      0.475    0.467      -0.052   0.538     0.544     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  7 13 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+Options: -N 10 -L 4 
+
+Tree 1: 
+HR_Mean <= 58.5: Stress {Stress,5;NoStress,0;} (5/0)
+HR_Mean > 58.5: NoStress {Stress,15;NoStress,20;} (35/15)
+
+Tree 2: 
+HR_Med <= 64.5: Stress {Stress,20;NoStress,16;} (36/16)
+HR_Med > 64.5: NoStress {Stress,0;NoStress,4;} (4/0)
+
+Tree 3: 
+HR_SD <= 3.5
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58
+|   |   HRV_rMSSD <= 78: Stress (20.0/7.0)
+|   |   HRV_rMSSD > 78: NoStress (9.0/1.0)
+HR_SD > 3.5: NoStress {Stress,1;NoStress,5;} (6/1)
+
+Tree 4: 
+HR_Max <= 72.0
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58
+|   |   HRV_rMSSD <= 78: Stress (20.0/7.0)
+|   |   HRV_rMSSD > 78: NoStress (9.0/1.0)
+HR_Max > 72.0: NoStress {Stress,1;NoStress,5;} (6/1)
+
+Tree 5: 
+HR_Min <= 58.5
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58
+|   |   HRV_rMSSD <= 74: Stress (18.0/6.0)
+|   |   HRV_rMSSD > 74: NoStress (12.0/2.0)
+HR_Min > 58.5: NoStress {Stress,1;NoStress,4;} (5/1)
+
+Tree 6: 
+HR_Med <= 58.5: Stress {Stress,4;NoStress,1;} (5/1)
+HR_Med > 58.5: NoStress {Stress,16;NoStress,19;} (35/16)
+
+Tree 7: 
+HR_Mod <= 58.5
+|   HR_Mean <= 58: Stress (5.0)
+|   HR_Mean > 58
+|   |   HRV_rMSSD <= 74: Stress (18.0/6.0)
+|   |   HRV_rMSSD > 74: NoStress (12.0/2.0)
+HR_Mod > 58.5: NoStress {Stress,1;NoStress,4;} (5/1)
+
+Tree 8: 
+HR_Min <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Min > 54.5: NoStress {Stress,12;NoStress,17;} (29/12)
+
+Tree 9: 
+HR_Mod <= 53.5: Stress {Stress,6;NoStress,2;} (8/2)
+HR_Mod > 53.5: NoStress {Stress,14;NoStress,18;} (32/14)
+
+Tree 10: 
+HRV_rMSSD <= 84.5
+|   HR_SD <= 3: Stress (26.0/9.0)
+|   HR_SD > 3: NoStress (4.0)
+HRV_rMSSD > 84.5
+|   HRV_rMSSD <= 89: NoStress (6.0)
+|   HRV_rMSSD > 89: Stress (4.0/1.0)
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          33               82.5    %
+Incorrectly Classified Instances         7               17.5    %
+Kappa statistic                          0.65  
+Mean absolute error                      0.3118
+Root mean squared error                  0.3722
+Relative absolute error                 62.3549 %
+Root relative squared error             74.4434 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.200    0.810      0.850    0.829      0.651    0.893     0.863     Stress
+                 0.800    0.150    0.842      0.800    0.821      0.651    0.893     0.871     NoStress
+Weighted Avg.    0.825    0.175    0.826      0.825    0.825      0.651    0.892     0.867     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  4 16 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          22               55      %
+Incorrectly Classified Instances        18               45      %
+Kappa statistic                          0.1   
+Mean absolute error                      0.524 
+Root mean squared error                  0.6173
+Relative absolute error                104.7988 %
+Root relative squared error            123.463  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.350    0.563      0.450    0.500      0.102    0.463     0.478     Stress
+                 0.650    0.550    0.542      0.650    0.591      0.102    0.463     0.482     NoStress
+Weighted Avg.    0.550    0.450    0.552      0.550    0.545      0.102    0.463     0.480     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 11 |  a = Stress
+  7 13 |  b = NoStress
+
+
+
+Options: -N 10 -L 6 
+
+Tree 1: 
+HR_Med <= 62.5: Stress {Stress,19;NoStress,13;} (32/13)
+HR_Med > 62.5: NoStress {Stress,1;NoStress,7;} (8/1)
+
+Tree 2: 
+HR_SD <= 3.5
+|   HR_Min <= 54: Stress (8.0/1.0)
+|   HR_Min > 54
+|   |   HR_Min <= 55: NoStress (6.0/1.0)
+|   |   HR_Min > 55
+|   |   |   HR_Med <= 61: Stress (11.0/3.0)
+|   |   |   HR_Med > 61: NoStress (9.0/3.0)
+HR_SD > 3.5: NoStress {Stress,1;NoStress,5;} (6/1)
+
+Tree 3: 
+HR_Max <= 72.0
+|   HR_Min <= 54: Stress (8.0/1.0)
+|   HR_Min > 54
+|   |   HR_Min <= 55: NoStress (6.0/1.0)
+|   |   HR_Min > 55
+|   |   |   HR_Med <= 61: Stress (11.0/3.0)
+|   |   |   HR_Med > 61: NoStress (9.0/3.0)
+HR_Max > 72.0: NoStress {Stress,1;NoStress,5;} (6/1)
+
+Tree 4: 
+HR_Mean <= 62.5
+|   HR_Mean <= 59: Stress (11.0/3.0)
+|   HR_Mean > 59
+|   |   HR_Min <= 55: NoStress (6.0/1.0)
+|   |   HR_Min > 55: Stress (14.0/5.0)
+HR_Mean > 62.5: NoStress {Stress,2;NoStress,7;} (9/2)
+
+Tree 5: 
+HR_Min <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Min > 54.5
+|   HR_Mean <= 62
+|   |   HR_Min <= 55: NoStress (6.0/1.0)
+|   |   HR_Min > 55: Stress (15.0/5.0)
+|   HR_Mean > 62: NoStress (8.0/1.0)
+
+Tree 6: 
+HR_Mod <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Mod > 54.5
+|   HR_Mean <= 62
+|   |   HR_Min <= 55: NoStress (6.0/1.0)
+|   |   HR_Min > 55: Stress (15.0/5.0)
+|   HR_Mean > 62: NoStress (8.0/1.0)
+
+Tree 7: 
+HRV_rMSSD <= 84.5
+|   HR_Max <= 67: Stress (21.0/6.0)
+|   HR_Max > 67: NoStress (9.0/2.0)
+HRV_rMSSD > 84.5: NoStress {Stress,3;NoStress,7;} (10/3)
+
+Tree 8: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5
+|   HR_Min <= 53: Stress (8.0/2.0)
+|   HR_Min > 53: NoStress (14.0/3.0)
+
+Tree 9: 
+HRV_rMSSD <= 59.5: Stress {Stress,7;NoStress,4;} (11/4)
+HRV_rMSSD > 59.5
+|   HR_Min <= 54: Stress (10.0/3.0)
+|   HR_Min > 54: NoStress (19.0/6.0)
+
+Tree 10: 
+HRV_SDNN <= 80.0
+|   HR_Mean <= 62: Stress (28.0/11.0)
+|   HR_Mean > 62: NoStress (6.0/1.0)
+HRV_SDNN > 80.0: NoStress {Stress,2;NoStress,4;} (6/2)
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          31               77.5    %
+Incorrectly Classified Instances         9               22.5    %
+Kappa statistic                          0.55  
+Mean absolute error                      0.283 
+Root mean squared error                  0.417 
+Relative absolute error                 56.5977 %
+Root relative squared error             83.3922 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.300    0.739      0.850    0.791      0.556    0.855     0.830     Stress
+                 0.700    0.150    0.824      0.700    0.757      0.556    0.855     0.818     NoStress
+Weighted Avg.    0.775    0.225    0.781      0.775    0.774      0.556    0.855     0.824     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          18               45      %
+Incorrectly Classified Instances        22               55      %
+Kappa statistic                         -0.1   
+Mean absolute error                      0.541 
+Root mean squared error                  0.6313
+Relative absolute error                108.1943 %
+Root relative squared error            126.2522 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.700    0.462      0.600    0.522      -0.105   0.421     0.468     Stress
+                 0.300    0.400    0.429      0.300    0.353      -0.105   0.421     0.488     NoStress
+Weighted Avg.    0.450    0.550    0.445      0.450    0.437      -0.105   0.421     0.478     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 12  8 |  a = Stress
+ 14  6 |  b = NoStress
+
+
+
+Options: -N 10 -L 8 
+
+Tree 1: 
+HR_Med <= 62.5: Stress {Stress,19;NoStress,13;} (32/13)
+HR_Med > 62.5: NoStress {Stress,1;NoStress,7;} (8/1)
+
+Tree 2: 
+HR_Mean <= 62.5
+|   HR_Mean <= 59: Stress (11.0/3.0)
+|   HR_Mean > 59
+|   |   HRV_rMSSD <= 70: Stress (11.0/3.0)
+|   |   HRV_rMSSD > 70: NoStress (9.0/2.0)
+HR_Mean > 62.5: NoStress {Stress,2;NoStress,7;} (9/2)
+
+Tree 3: 
+HR_Max <= 68.5: Stress {Stress,18;NoStress,13;} (31/13)
+HR_Max > 68.5: NoStress {Stress,2;NoStress,7;} (9/2)
+
+Tree 4: 
+HR_Min <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Min > 54.5
+|   HR_Mean <= 62
+|   |   HR_Max <= 65: NoStress (12.0/5.0)
+|   |   HR_Max > 65: Stress (9.0/3.0)
+|   HR_Mean > 62: NoStress (8.0/1.0)
+
+Tree 5: 
+HR_Mod <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Mod > 54.5
+|   HR_Mean <= 62
+|   |   HR_Max <= 65: NoStress (12.0/5.0)
+|   |   HR_Max > 65: Stress (9.0/3.0)
+|   HR_Mean > 62: NoStress (8.0/1.0)
+
+Tree 6: 
+HRV_rMSSD <= 84.5
+|   HR_Max <= 67: Stress (21.0/6.0)
+|   HR_Max > 67: NoStress (9.0/2.0)
+HRV_rMSSD > 84.5: NoStress {Stress,3;NoStress,7;} (10/3)
+
+Tree 7: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5
+|   HR_Min <= 53: Stress (8.0/2.0)
+|   HR_Min > 53: NoStress (14.0/3.0)
+
+Tree 8: 
+HRV_rMSSD <= 59.5: Stress {Stress,7;NoStress,4;} (11/4)
+HRV_rMSSD > 59.5
+|   HR_Min <= 54: Stress (10.0/3.0)
+|   HR_Min > 54: NoStress (19.0/6.0)
+
+Tree 9: 
+HR_SD <= 2.5: Stress {Stress,13;NoStress,11;} (24/11)
+HR_SD > 2.5
+|   HR_Min <= 54: Stress (8.0/3.0)
+|   HR_Min > 54: NoStress (8.0/2.0)
+
+Tree 10: 
+HR_Med <= 62.5
+|   HR_Min <= 53.5: Stress {Stress,6;NoStress,2;} (8/2)
+|   HR_Min > 53.5
+|   |   HR_Min <= 55: NoStress (9.0/3.0)
+|   |   HR_Min > 55: Stress (15.0/5.0)
+HR_Med > 62.5: NoStress {Stress,1;NoStress,7;} (8/1)
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          33               82.5    %
+Incorrectly Classified Instances         7               17.5    %
+Kappa statistic                          0.65  
+Mean absolute error                      0.3094
+Root mean squared error                  0.4065
+Relative absolute error                 61.8804 %
+Root relative squared error             81.2917 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.300    0.760      0.950    0.844      0.671    0.889     0.878     Stress
+                 0.700    0.050    0.933      0.700    0.800      0.671    0.889     0.865     NoStress
+Weighted Avg.    0.825    0.175    0.847      0.825    0.822      0.671    0.889     0.872     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = Stress
+  6 14 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          15               37.5    %
+Incorrectly Classified Instances        25               62.5    %
+Kappa statistic                         -0.25  
+Mean absolute error                      0.5793
+Root mean squared error                  0.6362
+Relative absolute error                115.851  %
+Root relative squared error            127.2344 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.700    0.391      0.450    0.419      -0.253   0.320     0.406     Stress
+                 0.300    0.550    0.353      0.300    0.324      -0.253   0.320     0.457     NoStress
+Weighted Avg.    0.375    0.625    0.372      0.375    0.371      -0.253   0.320     0.431     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 11 |  a = Stress
+ 14  6 |  b = NoStress
+
+
+
+Options: -N 10 -L 10 
+
+Tree 1: 
+HR_Med <= 61.5: Stress {Stress,17;NoStress,11;} (28/11)
+HR_Med > 61.5: NoStress {Stress,3;NoStress,9;} (12/3)
+
+Tree 2: 
+HR_Mean <= 59.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Mean > 59.5: NoStress {Stress,12;NoStress,17;} (29/12)
+
+Tree 3: 
+HR_Max <= 64.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Max > 64.5: NoStress {Stress,12;NoStress,17;} (29/12)
+
+Tree 4: 
+HR_Min <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Min > 54.5: NoStress {Stress,12;NoStress,17;} (29/12)
+
+Tree 5: 
+HR_Mod <= 54.5: Stress {Stress,8;NoStress,3;} (11/3)
+HR_Mod > 54.5: NoStress {Stress,12;NoStress,17;} (29/12)
+
+Tree 6: 
+HRV_rMSSD <= 84.5
+|   HR_Max <= 66: Stress (19.0/6.0)
+|   HR_Max > 66: NoStress (11.0/4.0)
+HRV_rMSSD > 84.5: NoStress {Stress,3;NoStress,7;} (10/3)
+
+Tree 7: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5
+|   HR_Mean <= 60: Stress (10.0/4.0)
+|   HR_Mean > 60: NoStress (12.0/3.0)
+
+Tree 8: 
+HRV_rMSSD <= 59.5: Stress {Stress,7;NoStress,4;} (11/4)
+HRV_rMSSD > 59.5
+|   HR_Min <= 54: Stress (10.0/3.0)
+|   HR_Min > 54: NoStress (19.0/6.0)
+
+Tree 9: 
+HR_SD <= 2.5: Stress {Stress,13;NoStress,11;} (24/11)
+HR_SD > 2.5: NoStress {Stress,7;NoStress,9;} (16/7)
+
+Tree 10: 
+HR_Med <= 61.5
+|   HRV_SDNN <= 64.0: Stress {Stress,10;NoStress,4;} (14/4)
+|   HRV_SDNN > 64.0: Stress {Stress,7;NoStress,7;} (14/7)
+HR_Med > 61.5: NoStress {Stress,3;NoStress,9;} (12/3)
+
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.3644
+Root mean squared error                  0.4454
+Relative absolute error                 72.8788 %
+Root relative squared error             89.0891 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.400    0.652      0.750    0.698      0.354    0.771     0.778     Stress
+                 0.600    0.250    0.706      0.600    0.649      0.354    0.771     0.768     NoStress
+Weighted Avg.    0.675    0.325    0.679      0.675    0.673      0.354    0.771     0.773     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          16               40      %
+Incorrectly Classified Instances        24               60      %
+Kappa statistic                         -0.2   
+Mean absolute error                      0.5561
+Root mean squared error                  0.6167
+Relative absolute error                111.2105 %
+Root relative squared error            123.332  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.650    0.409      0.450    0.429      -0.201   0.363     0.424     Stress
+                 0.350    0.550    0.389      0.350    0.368      -0.201   0.363     0.486     NoStress
+Weighted Avg.    0.400    0.600    0.399      0.400    0.398      -0.201   0.363     0.455     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 11 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+Options: -N 10 -L 12 
+
+Tree 1: 
+HR_Med <= 61.5: Stress {Stress,17;NoStress,11;} (28/11)
+HR_Med > 61.5: NoStress {Stress,3;NoStress,9;} (12/3)
+
+Tree 2: 
+HR_Max <= 67.5: Stress {Stress,16;NoStress,11;} (27/11)
+HR_Max > 67.5: NoStress {Stress,4;NoStress,9;} (13/4)
+
+Tree 3: 
+HRV_rMSSD <= 70.5: Stress {Stress,11;NoStress,6;} (17/6)
+HRV_rMSSD > 70.5: NoStress {Stress,9;NoStress,14;} (23/9)
+
+Tree 4: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5: NoStress {Stress,9;NoStress,13;} (22/9)
+
+Tree 5: 
+HR_Mean <= 60.5: Stress {Stress,11;NoStress,8;} (19/8)
+HR_Mean > 60.5: NoStress {Stress,9;NoStress,12;} (21/9)
+
+Tree 6: 
+HR_Min <= 56.5
+|   HRV_rMSSD <= 74: Stress (15.0/4.0)
+|   HRV_rMSSD > 74: NoStress (13.0/4.0)
+HR_Min > 56.5: NoStress {Stress,5;NoStress,7;} (12/5)
+
+Tree 7: 
+HR_Mod <= 56.5
+|   HRV_rMSSD <= 74: Stress (15.0/4.0)
+|   HRV_rMSSD > 74: NoStress (13.0/4.0)
+HR_Mod > 56.5: NoStress {Stress,5;NoStress,7;} (12/5)
+
+Tree 8: 
+HR_SD <= 2.5: Stress {Stress,13;NoStress,11;} (24/11)
+HR_SD > 2.5: NoStress {Stress,7;NoStress,9;} (16/7)
+
+Tree 9: 
+HR_Med <= 61.5
+|   HRV_SDNN <= 64.0: Stress {Stress,10;NoStress,4;} (14/4)
+|   HRV_SDNN > 64.0: Stress {Stress,7;NoStress,7;} (14/7)
+HR_Med > 61.5: NoStress {Stress,3;NoStress,9;} (12/3)
+
+Tree 10: 
+HR_Med <= 61.5
+|   HR_Max <= 65.5: Stress {Stress,10;NoStress,6;} (16/6)
+|   HR_Max > 65.5: Stress {Stress,7;NoStress,5;} (12/5)
+HR_Med > 61.5: NoStress {Stress,3;NoStress,9;} (12/3)
+
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          28               70      %
+Incorrectly Classified Instances        12               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3716
+Root mean squared error                  0.4559
+Relative absolute error                 74.3146 %
+Root relative squared error             91.182  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.800    0.400    0.667      0.800    0.727      0.408    0.763     0.749     Stress
+                 0.600    0.200    0.750      0.600    0.667      0.408    0.763     0.741     NoStress
+Weighted Avg.    0.700    0.300    0.708      0.700    0.697      0.408    0.763     0.745     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 16  4 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          21               52.5    %
+Incorrectly Classified Instances        19               47.5    %
+Kappa statistic                          0.05  
+Mean absolute error                      0.5099
+Root mean squared error                  0.5623
+Relative absolute error                101.9738 %
+Root relative squared error            112.4543 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.650    0.519      0.700    0.596      0.053    0.471     0.466     Stress
+                 0.350    0.300    0.538      0.350    0.424      0.053    0.471     0.532     NoStress
+Weighted Avg.    0.525    0.475    0.528      0.525    0.510      0.053    0.471     0.499     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = Stress
+ 13  7 |  b = NoStress
+
+
+
+Options: -N 10 -L 14 
+
+Tree 1: 
+HRV_rMSSD <= 70.5: Stress {Stress,11;NoStress,6;} (17/6)
+HRV_rMSSD > 70.5: NoStress {Stress,9;NoStress,14;} (23/9)
+
+Tree 2: 
+HR_Max <= 66.5: Stress {Stress,14;NoStress,10;} (24/10)
+HR_Max > 66.5: NoStress {Stress,6;NoStress,10;} (16/6)
+
+Tree 3: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5: NoStress {Stress,9;NoStress,13;} (22/9)
+
+Tree 4: 
+HR_Med <= 60.5: Stress {Stress,12;NoStress,8;} (20/8)
+HR_Med > 60.5: NoStress {Stress,8;NoStress,12;} (20/8)
+
+Tree 5: 
+HR_Mean <= 60.5: Stress {Stress,11;NoStress,8;} (19/8)
+HR_Mean > 60.5: NoStress {Stress,9;NoStress,12;} (21/9)
+
+Tree 6: 
+HR_SD <= 2.5: Stress {Stress,13;NoStress,11;} (24/11)
+HR_SD > 2.5: NoStress {Stress,7;NoStress,9;} (16/7)
+
+Tree 7: 
+HR_Min <= 55.5: Stress {Stress,9;NoStress,9;} (18/9)
+HR_Min > 55.5: Stress {Stress,11;NoStress,11;} (22/11)
+
+Tree 8: 
+HR_Mod <= 55.5: Stress {Stress,9;NoStress,9;} (18/9)
+HR_Mod > 55.5: Stress {Stress,11;NoStress,11;} (22/11)
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4315
+Root mean squared error                  0.5035
+Relative absolute error                 86.3046 %
+Root relative squared error            100.6905 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.500    0.600      0.750    0.667      0.258    0.658     0.601     Stress
+                 0.500    0.250    0.667      0.500    0.571      0.258    0.658     0.670     NoStress
+Weighted Avg.    0.625    0.375    0.633      0.625    0.619      0.258    0.658     0.635     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          22               55      %
+Incorrectly Classified Instances        18               45      %
+Kappa statistic                          0.1   
+Mean absolute error                      0.5155
+Root mean squared error                  0.5578
+Relative absolute error                103.1091 %
+Root relative squared error            111.556  %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.550    0.542      0.650    0.591      0.102    0.463     0.475     Stress
+                 0.450    0.350    0.563      0.450    0.500      0.102    0.463     0.524     NoStress
+Weighted Avg.    0.550    0.450    0.552      0.550    0.545      0.102    0.463     0.499     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+ 11  9 |  b = NoStress
+
+
+
+Options: -N 10 -L 16 
+
+Tree 1: 
+HRV_rMSSD <= 70.5: Stress {Stress,11;NoStress,6;} (17/6)
+HRV_rMSSD > 70.5: NoStress {Stress,9;NoStress,14;} (23/9)
+
+Tree 2: 
+HR_Max <= 66.5: Stress {Stress,14;NoStress,10;} (24/10)
+HR_Max > 66.5: NoStress {Stress,6;NoStress,10;} (16/6)
+
+Tree 3: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5: NoStress {Stress,9;NoStress,13;} (22/9)
+
+Tree 4: 
+HR_Med <= 60.5: Stress {Stress,12;NoStress,8;} (20/8)
+HR_Med > 60.5: NoStress {Stress,8;NoStress,12;} (20/8)
+
+Tree 5: 
+HR_Mean <= 60.5: Stress {Stress,11;NoStress,8;} (19/8)
+HR_Mean > 60.5: NoStress {Stress,9;NoStress,12;} (21/9)
+
+Tree 6: 
+HR_SD <= 2.5: Stress {Stress,13;NoStress,11;} (24/11)
+HR_SD > 2.5: NoStress {Stress,7;NoStress,9;} (16/7)
+
+Tree 7: 
+HR_Min <= 55.5: Stress {Stress,9;NoStress,9;} (18/9)
+HR_Min > 55.5: Stress {Stress,11;NoStress,11;} (22/11)
+
+Tree 8: 
+HR_Mod <= 55.5: Stress {Stress,9;NoStress,9;} (18/9)
+HR_Mod > 55.5: Stress {Stress,11;NoStress,11;} (22/11)
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4315
+Root mean squared error                  0.5035
+Relative absolute error                 86.3046 %
+Root relative squared error            100.6905 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.500    0.600      0.750    0.667      0.258    0.658     0.601     Stress
+                 0.500    0.250    0.667      0.500    0.571      0.258    0.658     0.670     NoStress
+Weighted Avg.    0.625    0.375    0.633      0.625    0.619      0.258    0.658     0.635     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+ 10 10 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          22               55      %
+Incorrectly Classified Instances        18               45      %
+Kappa statistic                          0.1   
+Mean absolute error                      0.4887
+Root mean squared error                  0.5383
+Relative absolute error                 97.7347 %
+Root relative squared error            107.6604 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.650    0.550    0.542      0.650    0.591      0.102    0.546     0.530     Stress
+                 0.450    0.350    0.563      0.450    0.500      0.102    0.546     0.536     NoStress
+Weighted Avg.    0.550    0.450    0.552      0.550    0.545      0.102    0.546     0.533     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  7 |  a = Stress
+ 11  9 |  b = NoStress
+
+
+
+Options: -N 10 -L 18 
+
+Tree 1: 
+HRV_SDNN <= 63.5: Stress {Stress,11;NoStress,7;} (18/7)
+HRV_SDNN > 63.5: NoStress {Stress,9;NoStress,13;} (22/9)
+
+Tree 2: 
+HR_Med <= 60.5: Stress {Stress,12;NoStress,8;} (20/8)
+HR_Med > 60.5: NoStress {Stress,8;NoStress,12;} (20/8)
+
+Tree 3: 
+HRV_rMSSD <= 72.5: Stress {Stress,12;NoStress,8;} (20/8)
+HRV_rMSSD > 72.5: NoStress {Stress,8;NoStress,12;} (20/8)
+
+Tree 4: 
+HR_Mean <= 60.5: Stress {Stress,11;NoStress,8;} (19/8)
+HR_Mean > 60.5: NoStress {Stress,9;NoStress,12;} (21/9)
+
+Tree 5: 
+HR_Min <= 55.5: Stress {Stress,9;NoStress,9;} (18/9)
+HR_Min > 55.5: Stress {Stress,11;NoStress,11;} (22/11)
+
+Tree 6: 
+HR_Mod <= 55.5: Stress {Stress,9;NoStress,9;} (18/9)
+HR_Mod > 55.5: Stress {Stress,11;NoStress,11;} (22/11)
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          25               62.5    %
+Incorrectly Classified Instances        15               37.5    %
+Kappa statistic                          0.25  
+Mean absolute error                      0.4363
+Root mean squared error                  0.5023
+Relative absolute error                 87.2586 %
+Root relative squared error            100.4578 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.600    0.586      0.850    0.694      0.280    0.680     0.633     Stress
+                 0.400    0.150    0.727      0.400    0.516      0.280    0.680     0.621     NoStress
+Weighted Avg.    0.625    0.375    0.657      0.625    0.605      0.280    0.680     0.627     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 17  3 |  a = Stress
+ 12  8 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          24               60      %
+Incorrectly Classified Instances        16               40      %
+Kappa statistic                          0.2   
+Mean absolute error                      0.4801
+Root mean squared error                  0.5994
+Relative absolute error                 96.0163 %
+Root relative squared error            119.8765 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.550    0.350    0.611      0.550    0.579      0.201    0.541     0.550     Stress
+                 0.650    0.450    0.591      0.650    0.619      0.201    0.541     0.530     NoStress
+Weighted Avg.    0.600    0.400    0.601      0.600    0.599      0.201    0.541     0.540     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 11  9 |  a = Stress
+  7 13 |  b = NoStress
+
+
+
+Options: -N 10 -L 20 
+
+Tree 1: 
+HR_Med <= 60.5: Stress {Stress,12;NoStress,8;} (20/8)
+HR_Med > 60.5: NoStress {Stress,8;NoStress,12;} (20/8)
+
+Tree 2: 
+HRV_rMSSD <= 72.5: Stress {Stress,12;NoStress,8;} (20/8)
+HRV_rMSSD > 72.5: NoStress {Stress,8;NoStress,12;} (20/8)
+
+Tree 3: 
+HRV_SDNN <= 65.5: Stress {Stress,11;NoStress,9;} (20/9)
+HRV_SDNN > 65.5: NoStress {Stress,9;NoStress,11;} (20/9)
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          27               67.5    %
+Incorrectly Classified Instances        13               32.5    %
+Kappa statistic                          0.35  
+Mean absolute error                      0.4167
+Root mean squared error                  0.5164
+Relative absolute error                 83.3333 %
+Root relative squared error            103.2796 %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.400    0.652      0.750    0.698      0.354    0.654     0.609     Stress
+                 0.600    0.250    0.706      0.600    0.649      0.354    0.654     0.608     NoStress
+Weighted Avg.    0.675    0.325    0.679      0.675    0.673      0.354    0.654     0.609     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15  5 |  a = Stress
+  8 12 |  b = NoStress
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          20               50      %
+Incorrectly Classified Instances        20               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.5   
+Root mean squared error                  0.5   
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               40     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.500      1.000    0.667      0.000    0.500     0.500     Stress
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.500     NoStress
+Weighted Avg.    0.500    0.500    0.250      0.500    0.333      0.000    0.500     0.500     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  0 |  a = Stress
+ 20  0 |  b = NoStress
+
+

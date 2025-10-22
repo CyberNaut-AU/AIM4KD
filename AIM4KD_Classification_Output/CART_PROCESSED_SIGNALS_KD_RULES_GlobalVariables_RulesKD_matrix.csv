@@ -1,0 +1,186 @@
+Participant_Num,Rule,Rule Length,Rule Support %,Rule Accuracy %,Rule Lift,Leaf Records,Leaf Misclassified,Target Class,Target Class Number,Rule Recall %,Instances,Number of Rules,Model Training Accuracy,Model Stratified Accuracy,Model Scheme,Weka_Experiment_Name,Model Algorithm,SCORE
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,6,97%,55%,['-U -M 2.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.63
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min < -7.5 AND Ratio_R_HR_Min < -12.0 AND GSR_MSDMin_TEMP < 0.5: Stress(17.0/0.0),4,42%,100%,2.0,17.0,0,Stress,20,85%,40,6,97%,55%,['-U -M 2.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,4.25
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min < -7.5 AND Ratio_R_HR_Min < -12.0 AND GSR_MSDMin_TEMP >= 0.5: NoStress(2.0/1.0),4,5%,50%,1.0,2.0,1,NoStress,20,5%,40,6,97%,55%,['-U -M 2.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,1.86
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min < -7.5 AND Ratio_R_HR_Min >= -12.0 AND RESP_Mod < 18.5: NoStress(4.0/0.0),4,10%,100%,2.0,4.0,0,NoStress,20,20%,40,6,97%,55%,['-U -M 2.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.11
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min < -7.5 AND Ratio_R_HR_Min >= -12.0 AND RESP_Mod >= 18.5: Stress(2.0/0.0),4,5%,100%,2.0,2.0,0,Stress,20,10%,40,6,97%,55%,['-U -M 2.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,2.93
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min >= -7.5: NoStress(4.0/0.0),2,10%,100%,2.0,4.0,0,NoStress,20,20%,40,6,97%,55%,['-U -M 2.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.11
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,4,90%,50%,['-U -M 4.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.58
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min < -7.5 AND Ratio_R_HR_Min < -12.0: Stress(18.0/2.0),3,45%,88%,1.8,18.0,2,Stress,20,80%,40,4,90%,50%,['-U -M 4.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.89
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min < -7.5 AND Ratio_R_HR_Min >= -12.0: NoStress(4.0/2.0),3,10%,50%,1.0,4.0,2,NoStress,20,10%,40,4,90%,50%,['-U -M 4.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,1.9
+1,GSR_MSDMin_RESP >= 14.5 AND Ratio_HR_G_Min >= -7.5: NoStress(4.0/0.0),2,10%,100%,2.0,4.0,0,NoStress,20,20%,40,4,90%,50%,['-U -M 4.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.05
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,2,75%,55%,['-U -M 6.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.52
+1,GSR_MSDMin_RESP >= 14.5: Stress(20.0/10.0),1,50%,50%,1.0,20.0,10,Stress,20,50%,40,2,75%,55%,['-U -M 6.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,2.65
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,2,75%,60%,['-U -M 8.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.55
+1,GSR_MSDMin_RESP >= 14.5: Stress(20.0/10.0),1,50%,50%,1.0,20.0,10,Stress,20,50%,40,2,75%,60%,['-U -M 8.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,2.67
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,2,75%,57%,['-U -M 10.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,3.54
+1,GSR_MSDMin_RESP >= 14.5: Stress(20.0/10.0),1,50%,50%,1.0,20.0,10,Stress,20,50%,40,2,75%,57%,['-U -M 10.0 '],Exp1_Combined_Attributes_2_Class_Stress,CART,2.66
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,5,95%,72%,['-U -M 2.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.83
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5 AND HR_Mean < 62.0: Stress(4.0/0.0),3,10%,100%,2.0,4.0,0,Stress,20,20%,40,5,95%,72%,['-U -M 2.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.18
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5 AND HR_Mean >= 62.0: NoStress(2.0/0.0),3,5%,100%,2.0,2.0,0,NoStress,20,10%,40,5,95%,72%,['-U -M 2.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.01
+1,RESP_Mean >= 17.5 AND HR_SD < 3.5: Stress(15.0/1.0),2,37%,93%,1.9,15.0,1,Stress,20,70%,40,5,95%,72%,['-U -M 2.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.93
+1,RESP_Mean >= 17.5 AND HR_SD >= 3.5: NoStress(3.0/0.0),2,7%,100%,2.0,3.0,0,NoStress,20,15%,40,5,95%,72%,['-U -M 2.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.1
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,3,82%,77%,['-U -M 4.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.79
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,3,82%,77%,['-U -M 4.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,2.0
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,82%,77%,['-U -M 4.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.27
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,3,82%,77%,['-U -M 6.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.79
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,3,82%,77%,['-U -M 6.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,2.0
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,82%,77%,['-U -M 6.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.27
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.07
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp2_Desc_AttributesOnly_2_Class_Stress,CART,3.16
+1,GSR_Max < 36.5 AND GSR_Min < 1.5: NoStress(4.0/1.0),2,10%,75%,1.5,4.0,1,NoStress,20,15%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,2.38
+1,GSR_Max < 36.5 AND GSR_Min >= 1.5 AND GSR_Max < 26.5 AND GSR_Mean < 10.5 AND GSR_Med < 7.5: Stress(4.0/4.0),5,10%,0%,0.0,4.0,4,Stress,20,0%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,0.66
+1,GSR_Max < 36.5 AND GSR_Min >= 1.5 AND GSR_Max < 26.5 AND GSR_Mean < 10.5 AND GSR_Med >= 7.5: Stress(7.0/0.0),5,17%,100%,2.0,7.0,0,Stress,20,35%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,3.22
+1,GSR_Max < 36.5 AND GSR_Min >= 1.5 AND GSR_Max < 26.5 AND GSR_Mean >= 10.5: NoStress(4.0/1.0),4,10%,75%,1.5,4.0,1,NoStress,20,15%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,2.38
+1,GSR_Max < 36.5 AND GSR_Min >= 1.5 AND GSR_Max >= 26.5: Stress(5.0/0.0),3,12%,100%,2.0,5.0,0,Stress,20,25%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,3.04
+1,GSR_Max >= 36.5 AND GSR_Mean < 29.5: NoStress(4.0/2.0),2,10%,50%,1.0,4.0,2,NoStress,20,10%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,1.81
+1,GSR_Max >= 36.5 AND GSR_Mean >= 29.5: NoStress(4.0/0.0),2,10%,100%,2.0,4.0,0,NoStress,20,20%,40,7,80%,42%,['-U -M 4.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,2.96
+1,GSR_Max < 36.5: Stress(18.0/12.0),1,45%,33%,0.7,18.0,12,Stress,20,30%,40,2,65%,45%,['-U -M 6.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,1.89
+1,GSR_Max >= 36.5: NoStress(8.0/2.0),1,20%,75%,1.5,8.0,2,NoStress,20,30%,40,2,65%,45%,['-U -M 6.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,2.6
+1,GSR_Max < 36.5: Stress(18.0/12.0),1,45%,33%,0.7,18.0,12,Stress,20,30%,40,2,65%,45%,['-U -M 8.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,1.89
+1,GSR_Max >= 36.5: NoStress(8.0/2.0),1,20%,75%,1.5,8.0,2,NoStress,20,30%,40,2,65%,45%,['-U -M 8.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,2.6
+1,GSR_Max < 36.5: Stress(18.0/12.0),1,45%,33%,0.7,18.0,12,Stress,20,30%,40,2,65%,45%,['-U -M 10.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,1.89
+1,GSR_Max >= 36.5: NoStress(8.0/2.0),1,20%,75%,1.5,8.0,2,NoStress,20,30%,40,2,65%,45%,['-U -M 10.0 '],Exp3_One_Channel_GSR_2_Class_Stress,CART,2.6
+1,RESP_Mean < 17.5 AND RESP_SD < 1.5: Stress(3.0/2.0),2,7%,33%,0.7,3.0,2,Stress,20,5%,40,3,80%,77%,['-U -M 4.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,1.55
+1,RESP_Mean < 17.5 AND RESP_SD >= 1.5: NoStress(14.0/2.0),2,35%,85%,1.7,14.0,2,NoStress,20,60%,40,3,80%,77%,['-U -M 4.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.56
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,80%,77%,['-U -M 4.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.25
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 6.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 6.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.07
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp4_One_Channel_RESP_2_Class_Stress,CART,3.16
+1,HR_Mean < 58.5: Stress(5.0/0.0),1,12%,100%,2.0,5.0,0,Stress,20,25%,40,6,85%,62%,['-U -M 2.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,3.17
+1,HR_Mean >= 58.5 AND HRV_rMSSD < 74.5 AND HR_Mean < 62.5: Stress(12.0/5.0),3,30%,58%,1.2,12.0,5,Stress,20,35%,40,6,85%,62%,['-U -M 2.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,2.57
+1,HR_Mean >= 58.5 AND HRV_rMSSD < 74.5 AND HR_Mean >= 62.5: NoStress(4.0/0.0),3,10%,100%,2.0,4.0,0,NoStress,20,20%,40,6,85%,62%,['-U -M 2.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,3.08
+1,HR_Mean >= 58.5 AND HRV_rMSSD >= 74.5 AND HRV_rMSSD < 94.5 AND HR_Min < 57.0: NoStress(9.0/0.0),4,22%,100%,2.0,9.0,0,NoStress,20,45%,40,6,85%,62%,['-U -M 2.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,3.52
+1,HR_Mean >= 58.5 AND HRV_rMSSD >= 74.5 AND HRV_rMSSD < 94.5 AND HR_Min >= 57.0: NoStress(2.0/1.0),4,5%,50%,1.0,2.0,1,NoStress,20,5%,40,6,85%,62%,['-U -M 2.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,1.83
+1,HR_Mean >= 58.5 AND HRV_rMSSD >= 74.5 AND HRV_rMSSD >= 94.5: Stress(2.0/0.0),3,5%,100%,2.0,2.0,0,Stress,20,10%,40,6,85%,62%,['-U -M 2.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,2.91
+1,HR_Mean < 58.5: Stress(5.0/0.0),1,12%,100%,2.0,5.0,0,Stress,20,25%,40,4,80%,50%,['-U -M 4.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,3.08
+1,HR_Mean >= 58.5 AND HRV_rMSSD < 74.5 AND HR_Mean < 62.5: Stress(12.0/5.0),3,30%,58%,1.2,12.0,5,Stress,20,35%,40,4,80%,50%,['-U -M 4.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,2.48
+1,HR_Mean >= 58.5 AND HRV_rMSSD < 74.5 AND HR_Mean >= 62.5: NoStress(4.0/0.0),3,10%,100%,2.0,4.0,0,NoStress,20,20%,40,4,80%,50%,['-U -M 4.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,3.0
+1,HR_Mean >= 58.5 AND HRV_rMSSD >= 74.5: NoStress(11.0/3.0),2,27%,72%,1.4,11.0,3,NoStress,20,40%,40,4,80%,50%,['-U -M 4.0 '],Exp5_One_Channel_HR_2_Class_Stress,CART,2.82
+1,TEMP_Min < -1.5 AND TEMP_Mod < 0.5: Stress(10.0/10.0),2,25%,0%,0.0,10.0,10,Stress,20,0%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,0.7
+1,TEMP_Min < -1.5 AND TEMP_Mod >= 0.5 AND TEMP_Max < 1.5: NoStress(2.0/0.0),3,5%,100%,2.0,2.0,0,NoStress,20,10%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.75
+1,TEMP_Min < -1.5 AND TEMP_Mod >= 0.5 AND TEMP_Max >= 1.5: NoStress(5.0/1.0),3,12%,80%,1.6,5.0,1,NoStress,20,20%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.54
+1,TEMP_Min >= -1.5 AND TEMP_Max < 1.5 AND TEMP_Mod < 0.5: Stress(3.0/1.0),3,7%,66%,1.3,3.0,1,Stress,20,10%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.08
+1,TEMP_Min >= -1.5 AND TEMP_Max < 1.5 AND TEMP_Mod >= 0.5: Stress(1.0/1.0),3,2%,0%,0.0,1.0,1,Stress,20,0%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,0.58
+1,TEMP_Min >= -1.5 AND TEMP_Max >= 1.5 AND TEMP_Mod < -0.5: Stress(2.0/1.0),3,5%,50%,1.0,2.0,1,Stress,20,5%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,1.67
+1,TEMP_Min >= -1.5 AND TEMP_Max >= 1.5 AND TEMP_Mod >= -0.5: Stress(3.0/0.0),3,7%,100%,2.0,3.0,0,Stress,20,15%,40,7,65%,50%,['-U -M 2.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.84
+1,TEMP_Min < -1.5 AND TEMP_Mod < 0.5: Stress(10.0/10.0),2,25%,0%,0.0,10.0,10,Stress,20,0%,40,4,65%,47%,['-U -M 4.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,0.69
+1,TEMP_Min < -1.5 AND TEMP_Mod >= 0.5: NoStress(7.0/1.0),2,17%,85%,1.7,7.0,1,NoStress,20,30%,40,4,65%,47%,['-U -M 4.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.79
+1,TEMP_Min >= -1.5 AND TEMP_Max < 1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,4,65%,47%,['-U -M 4.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,1.76
+1,TEMP_Min >= -1.5 AND TEMP_Max >= 1.5: Stress(5.0/1.0),2,12%,80%,1.6,5.0,1,Stress,20,20%,40,4,65%,47%,['-U -M 4.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.52
+1,TEMP_Min < -1.5 AND TEMP_Mod < 0.5: Stress(10.0/10.0),2,25%,0%,0.0,10.0,10,Stress,20,0%,40,4,65%,50%,['-U -M 6.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,0.7
+1,TEMP_Min < -1.5 AND TEMP_Mod >= 0.5: NoStress(7.0/1.0),2,17%,85%,1.7,7.0,1,NoStress,20,30%,40,4,65%,50%,['-U -M 6.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.81
+1,TEMP_Min >= -1.5 AND TEMP_Max < 1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,4,65%,50%,['-U -M 6.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,1.78
+1,TEMP_Min >= -1.5 AND TEMP_Max >= 1.5: Stress(5.0/1.0),2,12%,80%,1.6,5.0,1,Stress,20,20%,40,4,65%,50%,['-U -M 6.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.54
+1,TEMP_Min < -1.5 AND TEMP_Mod < 0.5: Stress(10.0/10.0),2,25%,0%,0.0,10.0,10,Stress,20,0%,40,3,65%,50%,['-U -M 8.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,0.7
+1,TEMP_Min < -1.5 AND TEMP_Mod >= 0.5: NoStress(7.0/1.0),2,17%,85%,1.7,7.0,1,NoStress,20,30%,40,3,65%,50%,['-U -M 8.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.81
+1,TEMP_Min >= -1.5: Stress(9.0/3.0),1,22%,66%,1.3,9.0,3,Stress,20,30%,40,3,65%,50%,['-U -M 8.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.46
+1,TEMP_Min < -1.5: NoStress(17.0/11.0),1,42%,35%,0.7,17.0,11,NoStress,20,30%,40,2,65%,52%,['-U -M 10.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,1.94
+1,TEMP_Min >= -1.5: Stress(9.0/3.0),1,22%,66%,1.3,9.0,3,Stress,20,30%,40,2,65%,52%,['-U -M 10.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.46
+1,TEMP_Min < -1.5: NoStress(17.0/11.0),1,42%,35%,0.7,17.0,11,NoStress,20,30%,40,2,65%,50%,['-U -M 12.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,1.93
+1,TEMP_Min >= -1.5: Stress(9.0/3.0),1,22%,66%,1.3,9.0,3,Stress,20,30%,40,2,65%,50%,['-U -M 12.0 '],Exp6_One_Channel_TEMP_2_Class_Stress,CART,2.46
+1,Ratio_R_G_Max < 22.5 AND HR_Mean < 58.5: Stress(3.0/0.0),2,7%,100%,2.0,3.0,0,Stress,20,15%,40,6,95%,65%,['-U -M 2.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.06
+1,Ratio_R_G_Max < 22.5 AND HR_Mean >= 58.5 AND Ratio_T_HR_Max < 71.5: NoStress(14.0/0.0),3,35%,100%,2.0,14.0,0,NoStress,20,70%,40,6,95%,65%,['-U -M 2.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,4.02
+1,Ratio_R_G_Max < 22.5 AND HR_Mean >= 58.5 AND Ratio_T_HR_Max >= 71.5 AND RESP_Mean < 17.5: NoStress(4.0/1.0),4,10%,75%,1.5,4.0,1,NoStress,20,15%,40,6,95%,65%,['-U -M 2.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.58
+1,Ratio_R_G_Max < 22.5 AND HR_Mean >= 58.5 AND Ratio_T_HR_Max >= 71.5 AND RESP_Mean >= 17.5: Stress(3.0/0.0),4,7%,100%,2.0,3.0,0,Stress,20,15%,40,6,95%,65%,['-U -M 2.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.06
+1,Ratio_R_G_Max >= 22.5 AND RESP_Mean < 16.5: NoStress(2.0/1.0),2,5%,50%,1.0,2.0,1,NoStress,20,5%,40,6,95%,65%,['-U -M 2.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,1.9
+1,Ratio_R_G_Max >= 22.5 AND RESP_Mean >= 16.5: Stress(12.0/0.0),2,30%,100%,2.0,12.0,0,Stress,20,60%,40,6,95%,65%,['-U -M 2.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.85
+1,Ratio_R_G_Max < 22.5: NoStress(18.0/7.0),1,45%,61%,1.2,18.0,7,NoStress,20,55%,40,2,77%,57%,['-U -M 4.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.94
+1,Ratio_R_G_Max >= 22.5: Stress(13.0/2.0),1,32%,84%,1.7,13.0,2,Stress,20,55%,40,2,77%,57%,['-U -M 4.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.33
+1,Ratio_R_G_Max < 22.5: NoStress(18.0/7.0),1,45%,61%,1.2,18.0,7,NoStress,20,55%,40,2,77%,60%,['-U -M 6.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.96
+1,Ratio_R_G_Max >= 22.5: Stress(13.0/2.0),1,32%,84%,1.7,13.0,2,Stress,20,55%,40,2,77%,60%,['-U -M 6.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.35
+1,Ratio_R_G_Max < 22.5: NoStress(18.0/7.0),1,45%,61%,1.2,18.0,7,NoStress,20,55%,40,2,77%,62%,['-U -M 8.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.97
+1,Ratio_R_G_Max >= 22.5: Stress(13.0/2.0),1,32%,84%,1.7,13.0,2,Stress,20,55%,40,2,77%,62%,['-U -M 8.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.36
+1,Ratio_R_G_Max < 22.5: NoStress(18.0/7.0),1,45%,61%,1.2,18.0,7,NoStress,20,55%,40,2,77%,62%,['-U -M 10.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.97
+1,Ratio_R_G_Max >= 22.5: Stress(13.0/2.0),1,32%,84%,1.7,13.0,2,Stress,20,55%,40,2,77%,62%,['-U -M 10.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.36
+1,Ratio_R_G_Max < 22.5: NoStress(18.0/7.0),1,45%,61%,1.2,18.0,7,NoStress,20,55%,40,2,77%,60%,['-U -M 12.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.96
+1,Ratio_R_G_Max >= 22.5: Stress(13.0/2.0),1,32%,84%,1.7,13.0,2,Stress,20,55%,40,2,77%,60%,['-U -M 12.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.35
+1,Ratio_R_G_Max < 22.5: NoStress(18.0/7.0),1,45%,61%,1.2,18.0,7,NoStress,20,55%,40,2,77%,60%,['-U -M 14.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,2.96
+1,Ratio_R_G_Max >= 22.5: Stress(13.0/2.0),1,32%,84%,1.7,13.0,2,Stress,20,55%,40,2,77%,60%,['-U -M 14.0 '],Exp7_Combo_Desc_Stats_Ratios_2_Class_Stress,CART,3.35
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,6,100%,55%,['-U -M 2.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.65
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med < 7.5: NoStress(6.0/0.0),3,15%,100%,2.0,6.0,0,NoStress,20,30%,40,6,100%,55%,['-U -M 2.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.3
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med >= 7.5 AND GSR_MSD_Max < 11.5: Stress(5.0/0.0),4,12%,100%,2.0,5.0,0,Stress,20,25%,40,6,100%,55%,['-U -M 2.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.21
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med >= 7.5 AND GSR_MSD_Max >= 11.5: NoStress(2.0/0.0),4,5%,100%,2.0,2.0,0,NoStress,20,10%,40,6,100%,55%,['-U -M 2.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,2.95
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean >= 17.5 AND HR_SD < 3.5: Stress(15.0/0.0),3,37%,100%,2.0,15.0,0,Stress,20,75%,40,6,100%,55%,['-U -M 2.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,4.08
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean >= 17.5 AND HR_SD >= 3.5: NoStress(2.0/0.0),3,5%,100%,2.0,2.0,0,NoStress,20,10%,40,6,100%,55%,['-U -M 2.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,2.95
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,4,90%,57%,['-U -M 4.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.61
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med < 7.5: NoStress(6.0/0.0),3,15%,100%,2.0,6.0,0,NoStress,20,30%,40,4,90%,57%,['-U -M 4.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.26
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med >= 7.5: Stress(5.0/2.0),3,12%,60%,1.2,5.0,2,Stress,20,15%,40,4,90%,57%,['-U -M 4.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,2.22
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean >= 17.5: Stress(15.0/2.0),2,37%,86%,1.7,15.0,2,Stress,20,65%,40,4,90%,57%,['-U -M 4.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.62
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,4,90%,65%,['-U -M 6.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.65
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med < 7.5: NoStress(6.0/0.0),3,15%,100%,2.0,6.0,0,NoStress,20,30%,40,4,90%,65%,['-U -M 6.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.3
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5 AND GSR_Med >= 7.5: Stress(5.0/2.0),3,12%,60%,1.2,5.0,2,Stress,20,15%,40,4,90%,65%,['-U -M 6.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,2.26
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean >= 17.5: Stress(15.0/2.0),2,37%,86%,1.7,15.0,2,Stress,20,65%,40,4,90%,65%,['-U -M 6.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.66
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,3,82%,67%,['-U -M 8.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.62
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5: NoStress(8.0/5.0),2,20%,37%,0.7,8.0,5,NoStress,20,15%,40,3,82%,67%,['-U -M 8.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,1.81
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean >= 17.5: Stress(15.0/2.0),2,37%,86%,1.7,15.0,2,Stress,20,65%,40,3,82%,67%,['-U -M 8.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.62
+1,GSR_MSDMin_RESP < 14.5: NoStress(10.0/0.0),1,25%,100%,2.0,10.0,0,NoStress,20,50%,40,3,82%,55%,['-U -M 10.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.56
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean < 17.5: NoStress(8.0/5.0),2,20%,37%,0.7,8.0,5,NoStress,20,15%,40,3,82%,55%,['-U -M 10.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,1.75
+1,GSR_MSDMin_RESP >= 14.5 AND RESP_Mean >= 17.5: Stress(15.0/2.0),2,37%,86%,1.7,15.0,2,Stress,20,65%,40,3,82%,55%,['-U -M 10.0 '],Exp8_Combo_Desc_Stats_Pairs_2_Class_Stress,CART,3.56
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,5,95%,72%,['-U -M 2.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.83
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5 AND HR_Mean < 62.0: Stress(4.0/0.0),3,10%,100%,2.0,4.0,0,Stress,20,20%,40,5,95%,72%,['-U -M 2.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.18
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5 AND HR_Mean >= 62.0: NoStress(2.0/0.0),3,5%,100%,2.0,2.0,0,NoStress,20,10%,40,5,95%,72%,['-U -M 2.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.01
+1,RESP_Mean >= 17.5 AND HR_SD < 3.5: Stress(15.0/1.0),2,37%,93%,1.9,15.0,1,Stress,20,70%,40,5,95%,72%,['-U -M 2.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.93
+1,RESP_Mean >= 17.5 AND HR_SD >= 3.5: NoStress(3.0/0.0),2,7%,100%,2.0,3.0,0,NoStress,20,15%,40,5,95%,72%,['-U -M 2.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.1
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,3,82%,77%,['-U -M 4.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.79
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,3,82%,77%,['-U -M 4.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,2.0
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,82%,77%,['-U -M 4.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.27
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,3,82%,77%,['-U -M 6.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.79
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,3,82%,77%,['-U -M 6.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,2.0
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,82%,77%,['-U -M 6.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.27
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.07
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp9_Combo_Desc_Stats_Nominals_2_Class_Stress,CART,3.16
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,5,95%,72%,['-U -M 2.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.83
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5 AND HR_Mean < 62.0: Stress(4.0/0.0),3,10%,100%,2.0,4.0,0,Stress,20,20%,40,5,95%,72%,['-U -M 2.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.18
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5 AND HR_Mean >= 62.0: NoStress(2.0/0.0),3,5%,100%,2.0,2.0,0,NoStress,20,10%,40,5,95%,72%,['-U -M 2.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.01
+1,RESP_Mean >= 17.5 AND HR_SD < 3.5: Stress(15.0/1.0),2,37%,93%,1.9,15.0,1,Stress,20,70%,40,5,95%,72%,['-U -M 2.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.93
+1,RESP_Mean >= 17.5 AND HR_SD >= 3.5: NoStress(3.0/0.0),2,7%,100%,2.0,3.0,0,NoStress,20,15%,40,5,95%,72%,['-U -M 2.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.1
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,3,82%,77%,['-U -M 4.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.79
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,3,82%,77%,['-U -M 4.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,2.0
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,82%,77%,['-U -M 4.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.27
+1,RESP_Mean < 17.5 AND TEMP_Min < -1.5: NoStress(14.0/1.0),2,35%,92%,1.8,14.0,1,NoStress,20,65%,40,3,82%,77%,['-U -M 6.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.79
+1,RESP_Mean < 17.5 AND TEMP_Min >= -1.5: Stress(4.0/2.0),2,10%,50%,1.0,4.0,2,Stress,20,10%,40,3,82%,77%,['-U -M 6.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,2.0
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,3,82%,77%,['-U -M 6.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.27
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 8.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 10.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 12.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 14.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.16
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,77%,['-U -M 16.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.24
+1,RESP_Mean < 17.5: NoStress(16.0/5.0),1,40%,68%,1.4,16.0,5,NoStress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.07
+1,RESP_Mean >= 17.5: Stress(15.0/4.0),1,37%,73%,1.5,15.0,4,Stress,20,55%,40,2,77%,60%,['-U -M 18.0 '],Exp10_Combo_Desc_Stats_ZScore_2_Class_Stress,CART,3.16
