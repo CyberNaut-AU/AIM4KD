@@ -1,0 +1,51 @@
+@relation DEAP_Participant_1
+
+@attribute TEMP_Mean numeric
+@attribute TEMP_Max numeric
+@attribute TEMP_Min numeric
+@attribute TEMP_Med numeric
+@attribute TEMP_Mod numeric
+@attribute target_labels {Stress,NoStress}
+
+@data
+
+-0.0,2.0,-2.0,-0.0,-0.0,NoStress
+0.0,2.0,-2.0,-0.0,0.0,NoStress
+-0.0,2.0,-3.0,0.0,-1.0,NoStress
+-0.0,2.0,-2.0,-0.0,1.0,NoStress
+0.0,1.0,-1.0,-0.0,-1.0,NoStress
+-0.0,2.0,-2.0,0.0,-0.0,NoStress
+-0.0,2.0,-2.0,0.0,1.0,NoStress
+0.0,2.0,-2.0,0.0,2.0,NoStress
+-0.0,2.0,-1.0,-0.0,-0.0,Stress
+-0.0,2.0,-2.0,-0.0,-1.0,Stress
+-0.0,1.0,-1.0,0.0,1.0,Stress
+0.0,2.0,-3.0,-0.0,-0.0,Stress
+0.0,3.0,-1.0,-0.0,-1.0,Stress
+0.0,1.0,-1.0,-0.0,-1.0,Stress
+-0.0,2.0,-1.0,-0.0,-1.0,Stress
+-0.0,2.0,-2.0,0.0,1.0,NoStress
+-0.0,1.0,-3.0,0.0,0.0,Stress
+-0.0,2.0,-2.0,-0.0,-0.0,NoStress
+0.0,2.0,-2.0,0.0,1.0,NoStress
+-0.0,2.0,-2.0,0.0,-1.0,NoStress
+0.0,2.0,-2.0,-0.0,-1.0,NoStress
+0.0,2.0,-3.0,-0.0,-0.0,NoStress
+0.0,1.0,-2.0,0.0,1.0,NoStress
+0.0,1.0,-2.0,0.0,1.0,NoStress
+-0.0,1.0,-1.0,-0.0,1.0,NoStress
+0.0,2.0,-1.0,-0.0,-1.0,NoStress
+0.0,1.0,-3.0,0.0,0.0,NoStress
+0.0,2.0,-2.0,0.0,0.0,Stress
+0.0,2.0,-1.0,-0.0,-0.0,Stress
+-0.0,1.0,-1.0,0.0,0.0,Stress
+0.0,2.0,-2.0,-0.0,-0.0,Stress
+-0.0,1.0,-1.0,0.0,-1.0,Stress
+0.0,2.0,-1.0,0.0,2.0,Stress
+-0.0,2.0,-2.0,-0.0,-0.0,Stress
+-0.0,1.0,-2.0,0.0,0.0,Stress
+0.0,2.0,-2.0,0.0,-2.0,Stress
+-0.0,2.0,-2.0,0.0,-1.0,Stress
+0.0,2.0,-2.0,-0.0,1.0,Stress
+0.0,2.0,-2.0,0.0,0.0,Stress
+-0.0,2.0,-2.0,0.0,0.0,NoStress

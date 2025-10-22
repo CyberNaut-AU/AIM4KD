@@ -1,0 +1,52 @@
+@relation DEAP_Participant_1
+
+@attribute RESP_Mean numeric
+@attribute RESP_SD numeric
+@attribute RESP_Max numeric
+@attribute RESP_Min numeric
+@attribute RESP_Med numeric
+@attribute RESP_Mod numeric
+@attribute target_labels {Stress,NoStress}
+
+@data
+
+16.0,3.0,20,10,17.0,18.0,NoStress
+16.0,1.0,19,14,16.0,17.0,NoStress
+18.0,1.0,20,16,19.0,19.0,NoStress
+17.0,1.0,18,14,17.0,17.0,NoStress
+17.0,2.0,20,14,18.0,19.0,NoStress
+16.0,3.0,20,9,16.0,16.0,NoStress
+17.0,2.0,19,13,18.0,19.0,NoStress
+17.0,2.0,20,14,18.0,18.0,NoStress
+18.0,1.0,19,15,18.0,19.0,Stress
+19.0,1.0,20,18,19.0,19.0,Stress
+16.0,2.0,20,12,16.0,16.0,Stress
+18.0,1.0,20,15,18.0,19.0,Stress
+17.0,2.0,20,14,17.0,19.0,Stress
+17.0,1.0,19,13,17.0,17.0,Stress
+19.0,1.0,21,16,19.0,19.0,Stress
+17.0,2.0,20,12,17.0,18.0,NoStress
+19.0,0.0,19,18,19.0,19.0,Stress
+17.0,2.0,20,14,17.0,16.0,NoStress
+18.0,1.0,20,17,18.0,17.0,NoStress
+16.0,3.0,21,11,16.0,14.0,NoStress
+16.0,2.0,20,13,16.0,15.0,NoStress
+16.0,2.0,20,13,16.0,16.0,NoStress
+14.0,2.0,16,10,14.0,15.0,NoStress
+18.0,1.0,20,15,18.0,17.0,NoStress
+18.0,1.0,19,17,18.0,18.0,NoStress
+15.0,3.0,19,11,14.0,13.0,NoStress
+16.0,2.0,21,12,16.0,16.0,NoStress
+18.0,2.0,20,14,18.0,18.0,Stress
+18.0,1.0,20,15,18.0,18.0,Stress
+18.0,1.0,19,17,18.0,18.0,Stress
+17.0,1.0,19,16,17.0,17.0,Stress
+18.0,2.0,21,15,18.0,19.0,Stress
+15.0,1.0,17,12,16.0,16.0,Stress
+19.0,1.0,21,18,19.0,19.0,Stress
+18.0,2.0,20,14,18.0,19.0,Stress
+18.0,1.0,20,17,18.0,18.0,Stress
+18.0,1.0,20,16,18.0,19.0,Stress
+18.0,2.0,20,15,19.0,19.0,Stress
+18.0,1.0,19,16,18.0,19.0,Stress
+17.0,2.0,20,14,16.0,15.0,NoStress
