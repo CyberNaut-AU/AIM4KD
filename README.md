@@ -7,7 +7,9 @@
 
 This paper introduces our Agnostic Interpretable Machine Learning for Knowledge Discovery (AIM4KD) framework, which advances emotional‑stress detection by integrating dataset preprocessing, classification, knowledge‑discovery techniques, and visualisation methods to augment traditional machine‑learning pipelines. The core innovation lies in an agnostic strategy that processes multiple dataset variants and applies several classification algorithms with dynamic configuration settings. This approach yields high‑quality logic rules, ensuring that the most significant patterns emerge for effective knowledge discovery. We validated AIM4KD with extensive experiments on the DEAP dataset, a key resource in affective computing for examining physiological changes during emotional episodes. When benchmarked against conventional preprocessing and classification methods using tree‑based and forest algorithms, AIM4KD produced an average 22‑fold increase in high‑quality rules. These results demonstrate the framework’s efficacy in accurately detecting emotional‑stress states, its capacity to handle complex multimodal datasets, and the importance of interpretability in machine learning. The findings highlight AIM4KD’s potential to improve decision‑making processes in physiological data analysis and its applicability across domains involving intricate time‑series data—such as health or finance—by helping experts uncover underlying dynamics.
 
-**IEEE ACCESS Paper details coming soon**
+Citation:
+
+N. Costadopoulos, D. Tien, S. U. Rehman and M. Z. Islam, "An Agnostic Interpretable Machine Learning for Knowledge Discovery Framework," IEEE Access, 2025, doi: 10.1109/ACCESS.2025.3625289. [Online]. Available: https://ieeexplore.ieee.org/document/11216965
 
 ## Code Release Status
 
@@ -188,10 +190,10 @@ When using or adapting this work, please include:
 If you use this work, please provide appropriate attribution by linking to the repository and crediting the original author.
 
 Suggested github resource citation:
-[X] N. Costadopoulos, “AIM4KD – Agnostic Interpretable Machine Learning for Knowledge Discovery,” 2025. [Online]. Available: https://github.com/CyberNaut-AU/AIM4KD. [DATE].
+N. Costadopoulos, “AIM4KD – Agnostic Interpretable Machine Learning for Knowledge Discovery,” 2025. [Online]. Available: https://github.com/CyberNaut-AU/AIM4KD. [DATE].
 
 Suggested AIM4KD Framework citation:
-***IEEE citation coming soon.***
+N. Costadopoulos, D. Tien, S. U. Rehman and M. Z. Islam, "An Agnostic Interpretable Machine Learning for Knowledge Discovery Framework," IEEE Access, 2025, doi: 10.1109/ACCESS.2025.3625289. [Online]. Available: https://ieeexplore.ieee.org/document/11216965
 
 ---
 
